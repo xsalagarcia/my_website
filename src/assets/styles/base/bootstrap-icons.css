@@ -1,0 +1,83 @@
+/**
+* This file is for using bootsrap icons.
+*/
+
+/*
+Example of use:
+<span class="bs-icons-x-lg"></span>
+Where to search:
+https://icons.getbootstrap.com/
+*/
+
+@font-face {
+  font-display: block;
+  font-family: "bootstrap-icons";
+  src: url("/fonts/bootstrap-icons-1.11.3/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6") format("woff2"),
+  url("/fonts/bootstrap-icons-1.11.3/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("woff");
+}
+[class^="bs-icons"]::before, [class*=" bs-icons"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align:-0.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bs-icons::before{content: attr(data-icon);}
+.bs-icons-after::after{
+  content: attr(data-icon);
+  margin-left: 0.5rem;
+  display: inline-block;
+  font-family: bootstrap-icons;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align:-0.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/*All icon class have to start with bs-icons*/
+.bs-icons-arrow-90deg-down::before { content: "\f10e"; }
+.bs-icons-arrow-90deg-left::before { content: "\f10f"; }
+.bs-icons-arrow-90deg-right::before { content: "\f110"; }
+.bs-icons-arrow-90deg-up::before { content: "\f111"; }
+.bs-icons-arrow-bar-down::before { content: "\f112"; }
+.bs-icons-arrow-bar-left::before { content: "\f113"; }
+.bs-icons-arrow-bar-right::before { content: "\f114"; }
+.bs-icons-arrow-bar-up::before { content: "\f115"; }
+.bs-icons-arrow-clockwise::before { content: "\f116"; }
+.bs-icons-arrow-counterclockwise::before { content: "\f117"; }
+.bs-icons-box-arrow-right::before{content: "\F1C3";} /*arrow, logout, signout, exit*/
+.bs-icons-eye-slash::before{content: "\F340";} /*eyeball, look, see*/
+.bs-icons-eye::before{content: "\F341";} /*eyeball, look, see*/
+.bs-icons-funnel-fill::before{content: "\F3E0";} /*filter*/
+.bs-icons-list::before {content: "\f479";}/*text, type, justify, alignment, menu, hamburger*/
+.bs-icons-trash::before{content: "\F5DE";} /*trash-can, garbage, delete, remove*/
+.bs-icons-x-lg::before {content: "\f659";}/*x, delete, remove, reset, clear, cancel, close, exit*/
+.bs-icons-chevron-down::before{content: "\F282";} /*down, chevron-down, chevron*/
+.bs-icons-chevron-left::before { content: "\f284"; }
+.bs-icons-chevron-right::before { content: "\f285"; }
+.bs-icons-pencil::before{content: "\F4CB";} /*edit, write*/
+.bs-icons-chevron-up::before{content: "\F286";} /*up, chevron-up, chevron*/
+.bs-icons-type-bold::before{content: "\F5F0";} /*text, type, bold*/
+.bs-icons-type-underline::before{content: "\F5F6";} /*text, type, underline*/
+.bs-icons-type-italic::before{content: "\F5F4";} /*text, type, italic*/
+.bs-icons-type-h1::before{content: "\F5F1";} /*text, type, heading, h1*/
+.bs-icons-type-h2::before{content: "\F5F2";} /*text, type, heading, h2*/
+.bs-icons-type-h3::before{content: "\F5F3";} /*text, type, heading, h3*/
+.bs-icons-window::before{content: "\F620";} /*app, application*/
+.bs-icons-check-lg::before{content: "\F633";} /*checkmark, confirm, done*/
+.bs-icons-envelope-at-fill::before{content: "\F84B";} /*email, message, mail, letter*/
+
+
+
