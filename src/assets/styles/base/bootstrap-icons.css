@@ -12,8 +12,8 @@ https://icons.getbootstrap.com/
 @font-face {
   font-display: block;
   font-family: "bootstrap-icons";
-  src: url("/fonts/bootstrap-icons-1.11.3/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6") format("woff2"),
-  url("/fonts/bootstrap-icons-1.11.3/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("woff");
+  src: url("/public/fonts/bootstrap-icons-1.11.3/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6") format("woff2"),
+  url("/public/fonts/bootstrap-icons-1.11.3/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("woff");
 }
 [class^="bs-icons"]::before, [class*=" bs-icons"]::before {
   display: inline-block;

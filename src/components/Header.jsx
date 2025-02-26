@@ -1,19 +1,27 @@
 //import "../assets/styles/components/Header.css"
 import { useCollapse } from "../hooks/useCollapse";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+import LangSelector from "./LangSelector";
+
 
 function Header() {
     const { elementRef, toggleCollapse } = useCollapse();
+    const { t } = useTranslation();
+  
+
     return (
         <header>
             <nav className="navbar">
-                <Link className="navbar-logo" to="/">XSG;</Link>
+                <NavLink className="navbar-logo" to="/">XSG;
+                </NavLink>
                 <div className="collapsable collapsed" ref={elementRef}>
                     <ul className="navbar-list">
-                        <li><Link to="/demo-projects">Demo projects</Link></li>
-                        <li><Link to="/public-notes">Public notes</Link></li>
-                        <li><Link to="/skills">Skills</Link></li>
+                        <li><NavLink to="/demo-projects">{t("Demo_projects")}</NavLink></li>
+                        <li><NavLink to="/public-notes">{t("Public_notes")}</NavLink></li>
+                        <li><NavLink to="/skills">{t("Skills")}</NavLink></li>
                     </ul>
+                    <LangSelector />
                 </div>
                 <button className="navbar-btn btn-icon-lg bs-icons" data-icon="&#xF479;"
                     onClick={toggleCollapse}></button>
