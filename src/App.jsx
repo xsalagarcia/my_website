@@ -8,8 +8,10 @@ function App() {
   return (
     <>
       <Header />
+      <div id="page-content">
       <Main />
       <Footer />
+      </div>
     </>
   )
 }

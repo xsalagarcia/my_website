@@ -1,5 +1,15 @@
 {
-    "Demo_projects": "Projectes demo",
-    "Public_notes": "Apunts públics",
-    "Skills": "Habilitats"
+    "Demo_projects": "Proyectos demo",
+    "Public_notes": "Apuntes públicos",
+    "Skills": "Habilidades",
+    "Welcome": "Hola, soy Xavier Sala",
+    "Computer_engineer": "Ingeniero informático",
+    "Software_engineering": "Ingeniero de software",
+    "Front_end_developer": "Desarrollador Front-end",
+    "Back_end_developer": "Desarrollador back-end",
+    "Mobile_developer": "Desarrollador mòbil",
+    "Linux_admin": "Administrador Linux",
+    "and_Physioterapist": "i... Fisioterapeuta",
+    "license_on_github_repo": "Licencia en el repo de GitHub.",
+    "email_me": "Envíame un correo"
 }

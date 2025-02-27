@@ -6,7 +6,7 @@ import PublicNotes from "../pages/PublicNotes";
 
 function Main() {
     return (
-        <main>
+        <main className="wrapper">
             <Routes>
                 <Route path="/" element={<Root />}></Route>
                 <Route path="/demo-projects" element={<DemoProjects />}></Route>

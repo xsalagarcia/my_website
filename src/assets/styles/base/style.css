@@ -52,9 +52,10 @@
         background-color: var(--color-1);
         position: absolute;
         top: 3.4rem;
-        right: -0.5rem;
+        right: calc(-1 * calc(100% - var(--wrapper-width, 95%)));
         display: flex;
         flex-direction: column;
+        box-shadow: -2px 8px 8px var(--gray-3);
         >*{
             margin-left: 1rem;
             margin-right: 1rem;;
@@ -62,6 +63,25 @@
         &>*:last-child{
             margin-bottom: 1rem;
         }
+        & .navbar-list {
+            & a{
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: 0.5rem;
+                    width: 0%;
+                    border-bottom: solid 1px var(--gray-1);
+                    transition: width 0.2s;
+                }
+                &:hover::before,
+                &.active::before{
+                    width: 100%;
+               } 
+            }
+        }
+
     }
 }
 
@@ -78,24 +98,9 @@
             justify-content: space-between;
             flex-grow: 1;
             overflow: visible;
+            box-shadow: none;
             & .navbar-list{
                 display: flex;
-                & a{
-                    position: relative;
-                    &::before{
-                        position: absolute;
-                        content: "";
-                        left: 0;
-                        bottom: 0.5rem;
-                        width: 0%;
-                        border-bottom: solid 2px var(--gray-1);
-                        transition: width 0.2s;
-                    }
-                    &:hover::before,
-                    &.active::before{
-                        width: 100%;
-                   } 
-                }
                 &>*{
                     margin-right: 1rem;
                     position: relative;
@@ -292,6 +297,14 @@ a.link {
     &:visited {
         color: var(--color-2);
         text-decoration-color: var(--color-1);
+    }
+    &.invert-colors{
+        color: var(--gray-1);
+    
+        &:visited {
+            color: var(--gray-2);
+            text-decoration-color: var(--gray-1);
+        }
     }
 }
 
@@ -873,161 +886,36 @@ select.open-list{
 }
 
 /************************ BASE PAGE ************************************/
-/* Menu and header */
+#root{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+}
+
 
 header {
-    position: sticky;
+    background-color: var(--color-1);
+    /*position: sticky;*/
     top: 0;
     z-index: 10;
     box-shadow: 0px 2px 8px var(--gray-3);
-    &>.header-container{
-
-        --button-colors: var(--almost-white);
-        background-color: var(--color-1);
-        
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start; 
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-    
-    
-        &>.menu-toggle{
-            --size: 41px; /*Change it to change the whole components of the button*/
-            position: relative;
-            border: 0;
-            width: var(--size);
-            height: var(--size);
-            
-            &>.hamburger{
-                position: absolute;
-                left: calc(calc(var(--size) - var(--length)) / 2);
-            }        
-            &>.hamburger,
-            &>.hamburger::before,
-            &>.hamburger::after{
-                --length: calc(var(--size) * 0.6);
-                --height: 3px;
-                content: "";
-                display: block;
-                background: var(--button-colors);
-                height: var(--height);
-                width: var(--length);
-                border-radius: var(--height);
-                transition: all ease-in-out 500ms;
-            }
-    
-            &>.hamburger::before {
-                transform: translateY(calc(var(--length) / -3));
-            }
-            
-            &>.hamburger::after {
-                --offset: calc(var(--height) * -1);
-                /*transform: translateY(var(--offset));*/
-                transform: translateY(calc(var(--offset) + calc(var(--length)) / 3));
-            }
-    
-            &.expanded>.hamburger {
-                transform: rotate(45deg);
-    
-                &::before{
-                    opacity: 0;
-                }
-    
-                &::after{
-                    transform: translateY(-3px) rotate(-90deg);
-                }
-            }
-        }
-        
-        
-        &>.logo{
-            margin: 0.5rem;
-            color: var(--gray-1);
-    
-        }
-    
-        & a::before{
-            color: var(--button-colors);
-        }
-    }
-
 }
 
-
-
-
-#main-content{
-    padding: 1rem;
-    transition: margin 0.5s;
+#page-content{
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    
 }
-
-
-@media only screen and (min-width: 768px) {
-    #main-content{
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
+main{
+    flex-grow: 1;
+    justify-content: center;
+    align-content: center;
 }
-
-
-#main-menu{
-    --size: 1.5rem;
-    position: fixed;
-    z-index: 10;
-    width: 0;
-    overflow: hidden;
-    transition: width 0.5s;
-    box-shadow: 2px -0px 8px var(--gray-3);
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
-    background-color: var(--almost-white);
-
-
-    & .option-menu{
-
-        flex-shrink: 0;
-        white-space: nowrap;
-        margin: 0;
-        display: block;
-        font: var(--body-font);
-        font-size: calc(var(--size) / 1.5);
-        position: relative;
-        padding: calc(var(--size) * 0.5) calc(var(--size) * 5) calc(var(--size) * 0.5) calc(var(--size) * 2);
-        text-decoration: none;
-        color: var(--color-4);
-        background-color: var(--contrast-color-6);
-        cursor: pointer;
-        &:hover{
-            background-color: var(--contrast-color-5);
-        }
-        &:active,
-        &.active{
-            background-color: var(--contrast-color-4);
-        }
-        &::before{
-            position: absolute;
-            top: calc(var(--size) / 2);
-            left: calc(var(--size) * 0.5);
-            text-align: center;
-            content: attr(data-icon);
-            display: inline-block;
-            font-family: bootstrap-icons;
-            font-size: var(--size);
-        }
-    }
-}
-
-
-@media only screen and (min-width: 768px) {
-    #main-menu {
-        width: calc(var(--size) * 2);
-        
-    }
-}
-
 footer {
+    background-color: var(--color-1);
+
     z-index: 10;
     box-shadow: 0px -2px 8px var(--gray-3);
 }

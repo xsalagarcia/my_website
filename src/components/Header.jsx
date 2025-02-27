@@ -12,7 +12,7 @@ function Header() {
 
     return (
         <header>
-            <nav className="navbar">
+            <nav className="navbar wrapper">
                 <NavLink className="navbar-logo" to="/">XSG;
                 </NavLink>
                 <div className="collapsable collapsed" ref={elementRef}>
