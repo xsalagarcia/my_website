@@ -11,17 +11,21 @@ function MarkdownRenderer ( {markdownContent }) {
 
     useEffect(()=>{
 
+        //const md = markdownIt({ html: true }).use(markdownItAnchor);
+        
         const md = markdownIt({ html: true }).use(markdownItAnchor, {
-            level: [1, 2, 3, 4], // Add IDs to h1, h2, h3, h4
+            level: [1, 2, 3, 4, 5, 6], // Add IDs to h1, h2, h3, h4
             slugify: (s) => 
                 s.toLowerCase()
                 .replace(/[']/g, '') // Remove apostrophes
-                .replace(/[^\p{L}\d]+/gu, '-') // Replace spaces and special chars with hyphens (preserves Unicode letters)
+                .replace(/[^\p{L}\d/_]+/gu, '-') //replace all that it is not a letter `\p{L}`, digit`\d`, / or _
+                .replace(/\//g, '')  // remove /
                 .replace(/^-+|-+$/g, ''), // Remove leading/trailing hyphens
-            permalink: markdownItAnchor.permalink.ariaHidden({ // Add a permalink symbol
+                
+            /*permalink: markdownItAnchor.permalink.ariaHidden({ // Add a permalink symbol
                 placement: 'before',
                 symbol: '#',
-            }),
+            }),*/
         });
         
 
