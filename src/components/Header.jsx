@@ -1,6 +1,6 @@
 //import "../assets/styles/components/Header.css"
 import { useCollapse } from "../hooks/useCollapse";
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router";
 import { useTranslation } from 'react-i18next';
 import LangSelector from "./LangSelector";
 

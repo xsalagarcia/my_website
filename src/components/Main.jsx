@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router";
 import Root from "../pages/Root"
 import DemoProjects from "../pages/DemoProjects";
 import Skills from "../pages/Skills";
@@ -9,11 +9,11 @@ function Main() {
     return (
         <main className="wrapper">
             <Routes>
-                <Route path="/" element={<Root />}></Route>
-                <Route path="/demo-projects" element={<DemoProjects />}></Route>
-                <Route path="/public-notes" element={<PublicNotes />}></Route>
-                <Route path="/skills" element={<Skills />}></Route>
-                <Route path="/legal" element={<LegalPage />}></Route>
+                <Route path="/" element={<Root />} />
+                <Route path="/demo-projects" element={<DemoProjects />} />
+                <Route path="/public-notes" element={<PublicNotes />} />
+                <Route path="/skills" element={<Skills />} />
+                <Route path="/legal" element={<LegalPage />} />
             </Routes>
         </main>
     )
