@@ -13,7 +13,7 @@ function Header() {
     return (
         <header>
             <nav className="navbar wrapper">
-                <NavLink className="navbar-logo" to="/">XSG;
+                <NavLink className="navbar-logo" to="/"><img src="/inv-logo.svg" style={{width: "64px", height: "64px"}} alt="" />
                 </NavLink>
                 <div className="collapsable collapsed" ref={elementRef}>
                     <ul className="navbar-list">

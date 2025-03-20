@@ -1,0 +1,121 @@
+.markdown {
+    & h1,h2,h3,h4,h5,h6{
+        color: var(--color-6);
+    }
+    & h1{
+        font-size: 1.8rem;
+    }
+    & h2 {
+        font-size: 1.8rem;
+    }
+    & h3 {
+        font-size: 1.6rem;
+    }
+    & h4 {
+        font-size: 1.4rem;
+    }
+    & h5 {
+        font-size: 1.2rem;
+    }
+    & h6 {
+        font-size: 1rem;
+    }
+    & strong {
+        color: var(--color-6);
+        font-weight: bold;
+    }
+    & em {
+        font-style: italic;
+        color: var(--color-6)
+    }
+    li, p {
+        text-align: justify;
+    }
+    table {
+        text-align: left;
+        margin: 1rem 0;
+    }
+    a[href^="#"]{
+        color: var(--color-5);
+    }
+    & ol {
+        list-style-type: decimal !important;
+        list-style: inside;
+        margin: 1rem 0;
+        padding-left: 2.5rem;
+
+        & li::marker{
+            color: var(--color-6);
+            white-space: pre;
+        }
+        & li{
+            padding-left: 0rem;
+        }
+    }
+    & ul {
+        margin: 1rem 0;
+        padding-left: 2.5rem;
+
+        & li {
+            --padding-left: 0.7rem;
+            padding-left: var(--padding-left);
+            display: list-item;
+            position: static;
+
+            & ul {
+                margin: 0;
+                padding-left: var(--padding-left);
+            }
+        }
+
+        & li::marker {
+            content: "-";
+            white-space: pre;
+            color: var(--color-6);
+            position: static;
+            display: inline;
+        }
+    }
+    & table {
+        background-color: var(--gray-1);
+        box-shadow: 0px 0px 4px var(--gray-4);
+        & thead {
+            font-weight: bold;
+            & th{
+                border: none;
+                border-bottom: solid 2px;
+            }
+        }
+        & tr {
+            & td{
+                border: none;
+                border-bottom: solid 1px;
+            }
+        }
+    }
+    & blockquote{
+        background-color: var(--color-9);
+        & p{
+            font-family: monospace;
+            text-align: left;
+            font-style: normal;
+        }
+        &::before,
+        &::after{
+            content: "";
+        }
+    }
+    & code{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        background-color: var(--color-11);
+    }
+    & pre{
+        background-color: var(--color-11);
+        margin: 1rem 0;
+        &>code{
+            font-size: 0.9rem;
+            line-height: 1.35rem;
+        }
+    }
+}

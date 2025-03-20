@@ -1,0 +1,43 @@
+{
+    "skills": "Habilidades",
+
+    "introduction": "No sé tocar el saxofón, pero sé usar un ordenador, y aparte de sugerirte que reinicies el ordenador, tengo otras habilidades.",
+
+    "python": "Python",
+    "python_text": "He usado Python para construir APIs REST (principalmente con FastAPI), scripts de sistema, algoritmos de criptografia, aprendizaje computacional, conectar con bases de datos, analizar datos... Estoy familiarizado con las bibliotecas habituales para estos casos.",
+
+    "javascript": "JavaScript",
+    "javascript_text": "principalmente utilizado para proyectos de front-end, tanto sin framework alguno (vanilla) como con React. Aunque también conozco Express como opción para crear APIs.",
+
+    "html_css": "HTML y CSS",
+    "html_css_text": "Son la base para crear páginas web y el front-end en aplicaciones web, y tengo experiencia haciendo páginas web a partir de frameworks CSS como Bootstrap, o creando mis propias bibliotecas CSS.",
+
+    "java": "Java",
+    "java_text": "Éste lenguaje me ha permitido crear aplicaciones de red y de escritorio. Durante los estudios de ingenieria informática éste era el lenguaje de uso más frecuente.",
+
+    "kotlin": "Kotlin",
+    "kotlin_text": "És el lenguaje prioritario para crear aplicaciones nativas en Android, y es en éste ámbito que lo he utilizado. Puedes ver el código de un par de proyectos publicados en la tienda de Android en GitHub.",
+
+    "databases": "Bases de datos",
+    "databases_text": "He utilizado bases de datos SQL como SQLite, PostgreSQL o MariaDB, pero también he realizado algunas prácticas con Firebase/Firestore como base de datos no relacional.",
+
+    "linux": "Linux",
+    "linux_text": "Es mi sistema operativo de uso habitual. Además tengo formación adicional como administrador de sistemas linux y lo he usado no sólo como sistema de escritorio si no en contexto de servidor.",
+
+    "git": "Git",
+    "git_text": "Habitualmente utilizo Git como sistema de control de versiones en los proyectos que realizo, y estoy familiarizado con las funcionalidades como el uso de branchs y tags para una mejor organización. También lo he usado junto con GitHub o GitLab.",
+
+    "security": "Seguridad",
+    "security_text": "Estoy concienciado con la necesidad de desarrollar de forma segura, teniendo en cuenta los usos erróneos o mal intencionados de una aplicación o servicio, y por ello también dispongo de formación adicional en este campo.",
+
+    "webdev": "Desarollo web",
+    "webdev_text": "Durante mis prácticas en empresa y trabajo de final de grado he desarrollado tanto el front-end como el back-end de aplicaciones web, así como en proyectos personales. Tanto en vanilla JavaScript como usando la biblioteca React.",
+
+    "mobiledev": "Desarrollo móvil",
+    "mobiledev_text": "He publicado proyectos en la tienda de aplicaciones de Android, y tengo formació en desarrollo móvil utilizando Kotlin y React Native.",
+
+    "learning": "Capacidad de aprendizaje",
+    "learning_text": "La formación de base amplia, con el grado en Ingeniería Informática demuestra comprensión profunda sobre aquello que hago, y mi historia laboral acredita el contínuo reciclaje, la adaptación al cambio y mi disposición para afrontar nuevos retos."
+    
+
+}

@@ -2,24 +2,162 @@
 * This file defines styles for specific classes.
 */
 
-/********************** QL container (Quill) *****************/
-.ql-container{
-    & strong{
-        font-weight: bold;
+/********************** SkillsCard *****************/
+.skill-card {
+    border-radius: 10px;
+    border-bottom: white solid 1px;
+    border-right: white solid 1px;
+    border-top: var(--gray-1) solid 1px;
+    border-left: var(--gray-1) solid 1px;
+    margin: 0.5rem;        
+    flex: 0 0 calc(100%- 0.5rem);
+
+    box-shadow: 12px 12px 12px rgba(0,0,0,0.1), -10px -10px 10px white;
+
+    background-image: linear-gradient(to bottom right, white, var(--gray-1));
+
+
+    & .title {
+        padding: 0.5rem;
+        border-bottom: solid 1px var(--gray-3);
+        & img{
+            margin-right: 0.5rem;
+        }
     }
-    & em {
-        font-style: italic;
-    }
-    & sub {
-        vertical-align: sub;
-        font-size: smaller;
-    }
-    & sup {
-        vertical-align: super;
-        font-size: smaller;
+    & .content {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+        text-align:justify;
     }
 }
 
+@media only screen and (min-width: 600px) {
+    .skill-card {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .skill-card {
+        flex: 0 0 calc(33.333% - 1rem);
+    }
+}
+
+
+/**************** ProjectCard **************************/
+
+.project-card {
+    padding: 1rem;
+    background-color: white;
+    margin: 1rem 0;
+
+    & h3,
+    & .bold,
+    & .italica {
+        color: var(--color-5);
+    }
+    & .content-image{
+        display: flex;
+        flex-flow: row wrap;
+        & .content {
+            flex: 0 0 100%;
+            margin: 0;
+            padding: 0.5rem;
+            text-align: justify;
+        &>a{
+            color: var(--color-5);
+            display: block;
+            text-decoration: underline dotted;
+        }
+        }
+        & figure {
+            flex: 0 0 100%;
+            margin: 0;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+    & .tags-list{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+        & li{
+            background-color: var(--color-7);
+            color: white;
+            margin: 0.2rem 0.2rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 15px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .project-card .content-image{
+        & .content{
+            flex: 0 0 50%;            
+        }
+        & figure {
+            flex: 0 0 50%;
+        }
+    }
+}
+
+.category-card{
+    background-color: var(--color-10);
+    margin-top: 1rem;
+    padding: 0.5rem;
+    & h5 {
+        margin-bottom: 0;
+        font-weight: bold;
+        & a{
+            color: var(--color-1);
+        }
+    }   
+    & .note{
+        padding: 0.5rem;
+        border-bottom: 2px solid var(--color-10);
+        transition: all 0.3s;
+        background-color: white;
+        & * {
+            transition: all 0.3s;
+
+        }
+        &:hover{
+            background-color: var(--color-1);
+            >a>*{
+
+                color: white;
+            }
+            & .tags-list li{
+                transition: all 0.3s;
+                background-color: white;
+                color: var(--color-7)
+            }
+        }
+        &:first-child{
+            margin-top: 0.5rem;
+            border-top: 2px solid var(--color-10);
+        }
+    }
+    & .tags-list{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+        & li{
+            background-color: var(--color-7);
+            color: white;
+            margin: 0.2rem 0.2rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 15px;
+        }
+    }
+}
 /********************* NAVBAR ***************************/
 .navbar{
     background-color: var(--color-1);
@@ -51,7 +189,7 @@
     & .collapsable{
         background-color: var(--color-1);
         position: absolute;
-        top: 3.4rem;
+        top: 4rem;
         right: calc(-1 * calc(100% - var(--wrapper-width, 95%)));
         display: flex;
         flex-direction: column;
@@ -490,6 +628,7 @@ ul.selectable {
 .margin-right-0-5{margin-right: 0.5rem;}
 .margin-right-1{margin-right: 1rem;}
 .margin-left-1{margin-left: 1rem;}
+.margin-left-0-5{margin-left: 0.5rem;}
 .margin-bottom-0-5{margin-bottom: 0.5rem;}
 
 
