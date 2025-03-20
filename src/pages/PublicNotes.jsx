@@ -2,9 +2,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
 
 
-import { useCollapse } from "../hooks/useCollapse";
 import Category from "../components/Category";
-import MarkdownRenderer from "../components/MarkdownRenderer";
 
 
 
@@ -238,7 +236,7 @@ function PublicNotes() {
       }
       ]
 */
-    const [showedNote, setShowedNote] = useState(null);
+    const [notesServiceState, setNotesServiceState] = useState("loading");
 
     const [categories, setCategories] = useState([]);
 
@@ -246,29 +244,30 @@ function PublicNotes() {
         fetch(`//${import.meta.env.VITE_NOTES_URL}/category/with_all`, {method: "GET"})
         .then(rawCategories=>{
             rawCategories.json()
-            .then(categoriesObj=>setCategories(categoriesObj))
+            .then(categoriesObj=>{
+              setCategories(categoriesObj);
+              setNotesServiceState("loaded");
+            })
         })
-        .catch((error)=> console.log(error));
+        .catch((error)=> {
+          setNotesServiceState("error");
+          console.log(error);
+        });
     }, []);
 
     return (
-    <>
-        {showedNote == null && <>
+        <>
             <h1>{t("public_notes")}</h1>
             <p className='text-align-justify'>{t("introduction")}</p>
-            {categories.map(category => {
-                return <Category key={category.name}category={category} setShowedNote={setShowedNote} />
-            })}
-        </>}
 
-        {showedNote != null && <>
-            <div>
-                <h2><button className="icon-btn btn-lg" onClick={()=>setShowedNote(null)}>patras</button>{showedNote.title} </h2>
-                <MarkdownRenderer markdownContent={showedNote.content}></MarkdownRenderer>
-            </div>
-            </>
-        }
-    </>
+            {notesServiceState == "loading" && <p style={{textAlign: "center", fontWeight: "bold"}}>{t("fetching_notes")}</p>}
+    
+            {notesServiceState == "error" && <p style={{textAlign: "center", fontWeight: "bold"}}>{t("error_fetching_notes")}</p>}
+            
+            {notesServiceState == "loaded" && categories.map(category => {
+                return <Category key={category.name} category={category} />
+            })}
+        </>
     )
     
 }

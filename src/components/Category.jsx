@@ -1,8 +1,9 @@
+import PropTypes from "prop-types";
 import { useCollapse } from "../hooks/useCollapse";
 import NoteCard from "./NoteCard";
 
 
-function Category ({ category, setShowedNote }) {
+function Category ({ category }) {
 
     const {elementRef, toggleCollapse } = useCollapse();
 
@@ -14,7 +15,7 @@ function Category ({ category, setShowedNote }) {
         </h5>
         <ul className="collapsable collapsed notes-list" ref={elementRef}>
         {category.notes.map(note=> {
-            return <NoteCard key={note.name} note={note} setShowedNote={setShowedNote}/>
+            return <NoteCard key={note.name} name={note.name} abstract={note.abstract} tags={note.tags}/>
         })}
         </ul>
 
@@ -22,6 +23,19 @@ function Category ({ category, setShowedNote }) {
 
     </div>
     )
+}
+
+Category.propTypes = {
+    category: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        notes: PropTypes.arrayOf(
+            PropTypes.shape({
+                name: PropTypes.string.isRequired,
+                abstract: PropTypes.string.isRequired
+            })
+        )
+    })
+
 }
 
 export default Category;

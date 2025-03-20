@@ -1,4 +1,6 @@
 {
     "public_notes": "Apuntes públicos",
-    "introduction": "En esta sección vas a encontrar algunos apuntes originales que creo que vale la pena compartirlos. No pretenden, ni ser un manual, ni sustituir ninguna documentación, ya que son notas personales que sintetizan o muestran ejemplos sobre detalles relacionados con algún tema técnico. Es por ello que el idioma utilizado en las explicaciones es principalmente mi lengua habitual, y los ejemplos suelen estar en inglés. Una documentación y explicaciones más completas, las puedes encontrar en inglés y en las páginas de soporte oficial."
+    "introduction": "En esta sección vas a encontrar algunos apuntes originales que creo que vale la pena compartirlos. No pretenden, ni ser un manual, ni sustituir ninguna documentación, ya que son notas personales que sintetizan o muestran ejemplos sobre detalles relacionados con algún tema técnico. Es por ello que el idioma utilizado en las explicaciones es principalmente mi lengua habitual, y los ejemplos suelen estar en inglés. Una documentación y explicaciones más completas, las puedes encontrar en inglés y en las páginas de soporte oficial.",
+    "fetching_notes": "Recuperando las notas. Toca esperar...",
+    "error_fetching_notes": "Lo siento. Ha ocurrido un error con el servicio y las notas no están disponibles."
 }

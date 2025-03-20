@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 /**
  * 
  * @param {Object} props
@@ -33,5 +35,18 @@ function ProjectCard({ className, title, content, imageUrl, tags, urls}) {
 
 }
 
-export default ProjectCard;
+ProjectCard.propTypes = { //className, title, content, imageUrl, tags, urls
+    className: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+    imageUrl: PropTypes.string.isRequired,
+    tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+    urls: PropTypes.arrayOf(
+        PropTypes.shape({
+            text: PropTypes.string.isRequired,
+            url: PropTypes.string.isRequired
+        })
+    ),
+};
 
+export default ProjectCard;
