@@ -1,23 +1,43 @@
 {
+    "skills": "Skills",
+
+    "introduction": "I don't know how to play the saxophone, but I know how to use a computer, and aside from suggesting you restart your computer, I have other skills.",
+
     "python": "Python",
-    "python_text": "He usado Python para construir APIs REST, scripts de sistema, algoritmos de criptografia, aprendizaje computacional, conectar con bases de datos, analizar datos... Estoy familiarizado con las bibliotecas habituales para estos casos.",
-
-    "java": "Java",
-    "java_text": "Éste lenguaje me ha permitido crear aplicaciones de red y de escritorio. Durante los estudios de ingenieria informática éste era el lenguaje de uso más frecuente.",
-
-    "kotlin": "Kotlin",
-    "kotlin_text": "És el lenguaje prioritario para crear aplicaciones nativas en Android, y es en éste ámbito que lo he utilizado. Puedes ver el código de un par de proyectos publicados en la tienda de Android en GitHub.",
+    "python_text": "I've used Python to build REST APIs (mostly with FastAPI), system scripts, cryptography algorithms, machine learning, connecting to databases, analyzing data... I'm familiar with the usual libraries for these cases.",
 
     "javascript": "JavaScript",
-    "javascript_text": "principalmente utilizado para proyectos de frontend, tanto sin framework alguno (vanilla) como con React. Aunque también conozco Express como opción para crear APIs.",
+    "javascript_text": "I've used it mainly for front-end projects, both without a framework (vanilla) and with React. Although I'm also familiar with Express.js as an option for creating APIs.",
 
     "html_css": "HTML y CSS",
-    "html_css_text": "Son la base para crear páginas web y el front-end en aplicaciones web, y tengo experiencia haciendo páginas web a partir de frameworks CSS como Bootstrap, o creando mis propias bibliotecas CSS.",
+    "html_css_text": "They are the basis for creating web pages and the front-end in web applications, and I have experience creating web pages from CSS frameworks like Bootstrap, or creating my own CSS libraries.",
 
-    "databases": "Bases de datos",
-    "databases_text": "He utilizado bases de datos SQL como SQLite, PostgreSQL o MariaDB, pero también he realizado algunas prácticas con Firebase/Firestore como base de datos no relacional.",
+    "java": "Java",
+    "java_text": "This language has allowed me to create network and desktop applications. During my computer engineering studies, this was the most frequently used language.",
+
+    "kotlin": "Kotlin",
+    "kotlin_text": "It's the preferred language for creating native Android apps, and this is where I've used it. You can see the code for a couple of projects published in the Android app store on GitHub.",
+
+    "databases": "Databases",
+    "databases_text": "I have used SQL databases such as SQLite, PostgreSQL or MariaDB, but I have also done some practice with Firebase/Firestore as a non-relational database.",
 
     "linux": "Linux",
-    "linux_text": "Es mi sistema operativo de uso habitual. Además tengo formación adicional como administrador de sistemas linux y lo he usado no sólo como sistema de escritorio si no en contexto de servidor."
+    "linux_text": "It's my usual operating system. I also have additional training as a Linux system administrator and have used it not only as a desktop system but also in a server context.",
+
+    "git": "Git",
+    "git_text": "I regularly use Git as a version control system for my projects, and I'm familiar with features like branching and tagging for better organization. I've also used it in conjunction with GitHub and GitLab.",
+
+    "security": "Security",
+    "security_text": "I am aware of the need to develop securely, taking into account the misuse or malicious intent of an application or service, and therefore I also have additional training in this area.",
+
+    "webdev": "Web development",
+    "webdev_text": "During my internships and final year project, I developed both the front-end and back-end of web applications, as well as personal projects, both in vanilla JavaScript and using the React library.",
+
+    "mobiledev": "Mobile development",
+    "mobiledev_text": "I have published projects on the Android App Store, and have a background in mobile development using Kotlin and React Native.",
+
+    "learning": "Learning capacity",
+    "learning_text":  "My broad-based training, with a degree in Computer Engineering, demonstrates a deep understanding of what I do, and my work history demonstrates my ongoing retraining, adaptability to change, and willingness to take on new challenges."
+    
 
 }

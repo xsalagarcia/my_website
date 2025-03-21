@@ -1,0 +1,6 @@
+{
+    "public_notes": "Apunts públics",
+    "introduction": "Dins aquesta secció trobareu alguns apunts originals que crec que val la pena compartir-los. No pretenen, ni ser un manual, ni substituir cap documentació, ja que són notes personals que sintetitzen o mostren exemples sobre detalls relacionats amb algun tema tècnic. És per això que l'idioma utilitzat a les explicacions és principalment la meva llengua habitual, i els exemples solen estar en anglès. Una documentació i explicacions més completes, es poden trobar en anglès i a les pàgines de suport oficial.",
+    "fetching_notes": "Recuperant les notes. Toca esperar...",
+    "error_fetching_notes": "Ho sento. S'ha produït un error amb el servei i les notes no estan disponibles."
+}

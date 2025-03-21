@@ -8,7 +8,7 @@
     "mobile_projects": [
         {
             "title": "Awale",
-            "content": "<p>Juego de mesa estratégico en el que se enfrentan dos jugadores. En este caso, la aplicación permite el juego contra la máquina, así como actuar simplemente como tablero y permitir el juego entre dos personas.</p><p>Este proyecto amplia y pone en práctica habilidades adquiridas durante la formación de <span class='bold'>Android Developer</span> así como el algoritmo <span class='italica'>minmax + alpha-beta pruning</span> de la asignatura <span class=bold>Inteligencia Artificial</span> del grado en Ingenieria Informática. Los gráficos son de creación propia, vectoriales, y el juego está publicado en la tienda de Android.</p>",
+            "content": "<p>Juego de mesa estratégico en el que se enfrentan dos jugadores. En este caso, la aplicación permite el juego contra la máquina, así como actuar simplemente como tablero y permitir el juego entre dos personas.</p><p>Este proyecto amplia y pone en práctica habilidades adquiridas durante la formación de <span class='bold'>Android Developer</span> así como el algoritmo <span class='italica'>minmax + alpha-beta pruning</span> de la asignatura <span class=bold>Inteligencia Artificial</span> del grado en Ingeniería Informática. Los gráficos son de creación propia, vectoriales, y el juego está publicado en la tienda de Android.</p>",
             "image_url": "/images/demos/awale.png",
             "tags": ["Kotlin", "Android", "Alpha-beta-pruning"],
             "urls": [
@@ -18,11 +18,11 @@
         },
         {
             "title": "Lista de la compra",
-            "content": "<p>Aplicación para gestionar la lista de la compra. Todos los datos son <span class='italica'>offline</span>, es decir que se centra en la gestión de datos de forma local en el teléfono. Permite crear categorías para asociar a ellos los productos, a los que se les puede hacer anotaciones y marcarlos para la compra, urgente o no. Todo ello para poder filtrar la lista con distintos criterios.</p><p>Fue creada con con la intención de trabajar con conceptos como <span class='italica'>ViewModel</span>, <span class='italica'>LiveData</span>, <span class='italica'>Room</span> y <span class='italica'>RecyclerView</span>, que permiten mostrar grandes listas de datos de forma eficiente y almacenar de forma local con SQLite los datos, estructurados a partir del ORM que ofrece la API de android.</p>",
+            "content": "<p>Aplicación para gestionar la lista de la compra. Todos los datos son <span class='italica'>offline</span>, es decir, que se centra en la gestión de datos de forma local en el teléfono. Permite crear categorías para asociar a ellos los productos, a los que se les puede hacer anotaciones y marcarlos para la compra, urgente o no. Todo ello para poder filtrar la lista con distintos criterios.</p><p>Fue creada con la intención de trabajar con conceptos como <span class='italica'>ViewModel</span>, <span class='italica'>LiveData</span>, <span class='italica'>Room</span> y <span class='italica'>RecyclerView</span>, que permiten mostrar grandes listas de datos de forma eficiente y almacenar de forma local con SQLite los datos, estructurados a partir del ORM que ofrece la API de android.</p>",
             "image_url": "/images/demos/shopping-list.png",
             "tags": ["Kotlin", "Room", "RecyclerView", "LiveData", "Android"],
             "urls": [
-                {"text": "En la tienda android", "url": "https://play.google.com/store/apps/details?id=sala.xevi.myprivateshoppinglist"},
+                {"text": "En la tienda Android", "url": "https://play.google.com/store/apps/details?id=sala.xevi.myprivateshoppinglist"},
                 {"text": "Repositorio GitHub", "url": "https://github.com/xsalagarcia/MyPrivateShoppingList"}
             ]
 
@@ -41,30 +41,18 @@
         },
         {
             "title": "Website personal",
-            "content": "<p>El <span class='italica'>website</span> que estás visitando es una aplicación creada con la biblioteca <span class='bold'>React</span>. Usa además la biblioteca <span class='bold'>i18next</span> y <span class='bold'>react-i18next</span> para la gestión de los distintos idiomas en que se ofrece el sitio y <span class='bold'>react-router</span> para una mejor organización de las secciones.</p>",
+            "content": "<p>El <span class='italica'>website</span> que estás visitando es una aplicación creada con la biblioteca <span class='bold'>React</span>. Usa además la biblioteca <span class='bold'>i18next</span> y <span class='bold'>react-i18next</span> para la gestión de los distintos idiomas en que se ofrece el sitio y <span class='bold'>react-router</span> para una mejor organización de las secciones.</p><p>Además, existe una sección con contenido renderizado dinámicamente (apuntes públicos) a partir de la obtención de datos de una API externa, en la sección de notas, haciendo posible ofrecer dinámicamente nuevas secciones y adaptar documentación Markdown para mostrarla en formato HTML.",
             "image_url": "/images/demos/shopping-list.png",
-            "tags": ["JavaScript", "NodeJS", "React", "i18next", "react-i18next", "react-router", "front-end"],
+            "tags": ["JavaScript", "NodeJS", "React", "i18next", "react-i18next", "react-router", "front-end", "markdownIT"],
             "urls": [
                 {"text": "Repositorio GitHub", "url": "https://github.com/xsalagarcia/awale"}
             ]
         },
         {
             "title": "API Notas personales",
-            "content": "<p>Un servicio que da soporte a la sección de <span class='italica'>Apuntes públicos</span> del presente <span class='italica'>website</span>. Me permite subir y mantener clasificados algunos apuntes que por ser textos originales me permito mostrarte. El servicio está desarrollado con <span class='bold'>Python</span>, usando el framework <span class='bold'>FastAPI</span></p>",
+            "content": "<p>Un servicio que da soporte a la sección de <span class='italica'>Apuntes públicos</span> del presente <span class='italica'>website</span>. Me permite subir y mantener clasificados algunos apuntes y compartir aquellos que son originales y de utilidad. El servicio está desarrollado con <span class='bold'>Python</span>, usando el framework <span class='bold'>FastAPI</span></p>",
             "image_url": "/images/demos/shopping-list.png",
             "tags": ["JavaScript", "NodeJS", "React", "i18next", "react-i18next", "front-end"],
-            "urls": [
-                {"text": "Repositorio GitHub", "url": "https://github.com/xsalagarcia/awale"}
-            ]
-        }
-    ],
-    "desktop_dev": "Desarrollo de escritorio",
-    "desktop_projects": [
-        {
-            "title": "Visualizador Visible Human Project",
-            "content": "<p>Bla bla</p>",
-            "image_url": "/images/demos/shopping-list.png",
-            "tags": ["Java", "JavaFX", "SQLite"],
             "urls": [
                 {"text": "Repositorio GitHub", "url": "https://github.com/xsalagarcia/awale"}
             ]

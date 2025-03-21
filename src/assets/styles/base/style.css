@@ -164,7 +164,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
 
     &>*{
         margin: 0.5rem;
@@ -188,22 +187,24 @@
     }
     & .collapsable{
         background-color: var(--color-1);
-        position: absolute;
-        top: 4rem;
-        right: calc(-1 * calc(100% - var(--wrapper-width, 95%)));
+        position: absolute; /*from head*/
+        top: calc(100% - 8px);  /*8px shadow*/
+        width: 100vw;
+        right: -8px; /*8px shadow*/
         display: flex;
         flex-direction: column;
         box-shadow: -2px 8px 8px var(--gray-3);
         >*{
             margin-left: 1rem;
-            margin-right: 1rem;;
+            margin-right: 1rem;
         }
         &>*:last-child{
             margin-bottom: 1rem;
         }
         & .navbar-list {
             & a{
-                position: relative;
+                position: relative; 
+                text-align: center;
                 &::before{
                     position: absolute;
                     content: "";
@@ -220,6 +221,11 @@
             }
         }
 
+        select {
+            display: block;
+            margin: auto;
+        }
+
     }
 }
 
@@ -229,7 +235,7 @@
             display: none;
         }
         & .collapsable{
-            position:static;
+            position: static; 
             height: auto;
             flex-direction: row;
             align-items: center;
@@ -275,6 +281,7 @@
             &>*:last-child{
                 margin-bottom: 0rem;
             }
+
         }
     }
 }
@@ -1035,6 +1042,7 @@ select.open-list{
 header {
     background-color: var(--color-1);
     /*position: sticky;*/
+    position: relative;
     top: 0;
     z-index: 10;
     box-shadow: 0px 2px 8px var(--gray-3);

@@ -2,14 +2,15 @@
     "Demo_projects": "Projectes demo",
     "Public_notes": "Apunts públics",
     "Skills": "Habilitats",
-    "Welcome": "Hola, sóc Xavier Sala",
-    "Computer_engineer": "Enginyer informàtic",
-    "Software_engineering": "Enginyeria del programari",
-    "Front_end_developer": "Desenvolupador Front-end",
+    "Welcome": "Hola, soc Xavier Sala",
+    "Computer_engineer": "Enginyer Informàtic",
+    "Software_engineering": "Enginyer de programari",
+    "Front_end_developer": "Desenvolupador front-end",
     "Back_end_developer": "Desenvolupador back-end",
-    "Mobile_developer": "Desenvolupador mòbil",
+    "Mobile_developer": "Desenvolupador móvil",
     "Linux_admin": "Administrador Linux",
     "and_Physioterapist": "i... Fisioterapeuta",
-    "license_on_github_repo": "Llicència al repo de GitHub.",
-    "email_me": "Envia'm un correu"
+    "license_on_github_repo": "Llicència a GitHub.",
+    "email_me": "Envia'm un email",
+    "legal_notes": "Notes legals"
 }

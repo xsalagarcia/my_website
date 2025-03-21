@@ -2,14 +2,15 @@
     "Demo_projects": "Demo projects",
     "Public_notes": "Public notes",
     "Skills": "Skills",
-    "Welcome": "Hi, I'm Xavier Sala",
+    "Welcome": "Hello, I'm Xavier Sala",
     "Computer_engineer": "Computer engineer",
-    "Software_engineering": "Software engineering",
-    "Front_end_developer": "Front-end developer",
+    "Software_engineering": "Software Engineer",
+    "Front_end_developer": "Front-end Developer",
     "Back_end_developer": "Back-end developer",
-    "Mobile_developer": "Mobile developer",
-    "Linux_admin": "Linux admin",
-    "and_Physioterapist": "and... Physioterapist",
-    "license_on_github_repo": "License on GitHub repo.",
-    "email_me": "Email me"
+    "Mobile_developer": "Mobile Developer",
+    "Linux_admin": "Linux Administrator",
+    "and_Physioterapist": "i... Physiotherapist",
+    "license_on_github_repo": "License on GitHub.",
+    "email_me": "Email me",
+    "legal_notes": "Legal notices"
 }

@@ -1,0 +1,6 @@
+{
+    "public_notes": "Public notes",
+    "introduction": "In this section, you'll find some original notes that I think are worth sharing. They're not intended to be a manual or a substitute for any documentation; they're personal notes that summarize or show examples of details related to a technical topic. That's why the explanations are primarily in my native language, and the examples are usually in English. More complete documentation and explanations can be found in English and on the official support pages.",
+    "fetching_notes": "Recovering the notes. Time to wait...",
+    "error_fetching_notes": "Sorry. A service error occurred and the notes are unavailable."
+}
