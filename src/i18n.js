@@ -9,7 +9,7 @@ i18n
     .use(Backend)
     .use(LanguageDetector)
     .init({
-        debug: true,
+        /*debug: true,*//*Uncomment it for debugging*/
         suportedLngs: ["en", "ca", "es"],
         fallbackLng: "es",
         backend: {

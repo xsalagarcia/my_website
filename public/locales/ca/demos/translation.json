@@ -8,7 +8,7 @@
     "mobile_projects": [
         {
             "title": "Awale",
-            "content": "<p>Joc de taula estratègic en què s'enfronten dos jugadors. En aquest cas, l'aplicació permet el joc contra la màquina, així com actuar simplement com a tauler i permetre el joc entre dues persones.</p><p>Aquest projecte amplia i posa en pràctica habilitats adquirides durant la formació d'⁣span class='bold'>Android Developer</span>, així com l'algorisme <span='italica'>minmax + alpha-beta pruning</span> de l'assignatura <span class='bold'>intel·ligència artificial</span> del grau en Enginyeria Informàtica. Els gràfics són de creació pròpia, vectorials, i el joc està publicat a la botiga d'Android.</p>",
+            "content": "<p>Joc de taula estratègic en què s'enfronten dos jugadors. En aquest cas, l'aplicació permet el joc contra la màquina, així com actuar simplement com a tauler i permetre el joc entre dues persones.</p><p>Aquest projecte amplia i posa en pràctica habilitats adquirides durant la formació d'<span class='bold'>Android Developer</span>, així com l'algorisme <span class='italica'>minmax + alpha-beta pruning</span> de l'assignatura <span class='bold'>intel·ligència artificial</span> del grau en Enginyeria Informàtica. Els gràfics són de creació pròpia, vectorials, i el joc està publicat a la botiga d'Android.</p>",
             "image_url": "/images/demos/awale.png",
             "tags": ["Kotlin", "Android", "Alpha-beta-pruning"],
             "urls": [
@@ -18,7 +18,7 @@
         },
         {
             "title": "Llista de la compra",
-            "content": "<p>Aplicació per gestionar la llista de la compra. Totes les dades són <span class='italica'>offline</span>, és a dir, que se centra en la gestió de dades de forma local al telèfon. Permet crear categories per associar-hi els productes, als quals es poden fer anotacions i marcar-los per a la compra, urgent o no. Tot això per poder filtrar la llista amb diferents criteris.</p><p>Va ser creada amb la intenció de treballar amb conceptes com <span class='italica'>ViewModel</span>, <span class='italica'>LiveData</span>, <span class='italica'>Room</span> i emmagatzemar de manera local amb SQLite les dades, estructurades a partir de l'ORM que ofereix l'API d'android.</p>",
+            "content": "<p>Aplicació per gestionar la llista de la compra. Totes les dades són <span class='italica'>offline</span>, és a dir, que se centra en la gestió de dades de forma local al telèfon. Permet crear categories per associar-hi els productes, als quals es poden fer anotacions i marcar-los per a la compra, urgent o no. Tot això per poder filtrar la llista amb diferents criteris.</p><p>Va ser creada amb la intenció de treballar amb conceptes com <span class='bold'>ViewModel</span>, <span class='bold'>LiveData</span>, <span class='bold'>Room</span> i <span class='bold'>RecyclerView</span>, que permeten mostrar grans llistes de dades de forma eficient i emmagatzemar de manera local amb <span class='bold'>SQLite</span> les dades, estructurades a partir de l'ORM que ofereix l'API d'android.</p>",
             "image_url": "/images/demos/shopping-list.png",
             "tags": ["Kotlin", "Room", "RecyclerView", "LiveData", "Android"],
             "urls": [
@@ -32,7 +32,7 @@
     "web_projects": [
         {
             "title": "Jonathan assistant",
-            "content": "<p>Aplicació web amb un <span class='italica'>back-end</span> programat amb <span class='bold'>Python</span>, utilitzant el <span class='italica'>framework</span> <span class='bold'>FastAPI</span> i l'API d'<span class='bold'>OpenAI</s> . L'assistent creat, a més de generar respostes basades en l'input de l'usuari, a través de les instruccions i el suport del <span class='italica'>back-end</span> es fan crides altres APIs externes com <span class='bold'>Open-Meteo</span> i <span class='bold'>geocoding</s> recupera localitzacions exactes  i previsions meteorològiques per les dates que indica l'usuari.<p>L'aplicació demostra el potencial dels assistents que ofereix <span class='bold'>OpenAI</span> per tractar amb dades fiables i actualitzades, provinguin d'APIs externes com de bases de dades privades, i les presenta de manera entenedora a l'usuari.</p>",
+            "content": "<p>Aplicació web amb un <span class='italica'>back-end</span> programat amb <span class='bold'>Python</span>, utilitzant el <span class='italica'>framework</span> <span class='bold'>FastAPI</span> i l'API d'<span class='bold'>OpenAI</span>. L'assistent creat, a més de generar respostes basades en l'input de l'usuari, a través de les instruccions i el suport del <span class='italica'>back-end</span> fa crides a altres APIs externes com <span class='bold'>Open-Meteo</span> i <span class='bold'>geocoding</span> recuperant localitzacions exactes i previsions meteorològiques per les dates que indica l'usuari.<p>L'aplicació demostra el potencial dels assistents que ofereix <span class='bold'>OpenAI</span> per tractar amb dades fiables i actualitzades, provinguin d'APIs externes com de bases de dades privades, i les presenta de manera entenedora a l'usuari.</p>",
             "image_url": "/images/demos/shopping-list.png",
             "tags": ["front-end", "back-end", "Python", "FastAPI", "OpenAI", "Assistants", "API REST", "Redis"],
             "urls": [
@@ -42,7 +42,7 @@
         },
         {
             "title": "Website personal",
-            "content": "<p>El <span class='italica'>website</span> que estas visitant és una aplicació creada amb la biblioteca <span class='bold'>React</span>. Addicionalment, s'utilitza la biblioteca <span class='bold'>i18next</span> i <span class='bold'>react-i18next</span> per a la gestió dels diferents idiomes en què s'ofereix el lloc web i <span class='bold'>react-router</span> per a una millor organització de les seccions. A més, existeix una secció amb contingut renderitzat dinàmicament (apunts públics) a partir de l'obtenció de dades d'una API externa, a la secció de notes, fent possible oferir dinàmicament noves seccions i adaptar documentació Markdown per mostrar-la en format HTML.",
+            "content": "<p>El <span class='italica'>website</span> que estas visitant és una aplicació creada amb la biblioteca <span class='bold'>React</span>. Addicionalment, s'utilitza la biblioteca <span class='bold'>i18next</span> i <span class='bold'>react-i18next</span> per a la gestió dels diferents idiomes en què s'ofereix el lloc web i <span class='bold'>react-router</span> per a una millor organització de les seccions.</p><p>A més, existeix un apartat amb contingut renderitzat dinàmicament (apunts públics) a partir de l'obtenció de dades d'una API externa, a la secció de notes, fent possible oferir dinàmicament noves seccions i adaptar documentació Markdown per mostrar-la en format HTML.",
             "image_url": "/images/demos/shopping-list.png",
             "tags": ["JavaScript", "NodeJS", "React", "i18next", "react-i18next", "react-router", "front-end", "markdownIT"],
             "urls": [
@@ -53,7 +53,7 @@
             "title": "API Notes personals",
             "content": "<p>Un servei que dona suport a la secció d'<span class='italica'>Apunts públics</span> del present <span class='italica'>website</span>. Em permet pujar i mantenir classificats alguns apunts i compartir aquells que són originals i útils. El servei està desenvolupat amb <span class='bold'>Python</span>, utilitzant el <span class='italica'>framework</span> <span class='bold'>FastAPI</span></p>",
             "image_url": "/images/demos/shopping-list.png",
-            "tags": ["JavaScript", "NodeJS", "React", "i18next", "react-i18next", "front-end"],
+            "tags": ["Python", "FastAPI", "Redis", "SQLModel", "back-end"],
             "urls": [
                 {"text": "Repositori GitHub", "url": "https://github.com/xsalagarcia/awale"}
             ]

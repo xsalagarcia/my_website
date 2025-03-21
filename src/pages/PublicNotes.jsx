@@ -257,7 +257,7 @@ function PublicNotes() {
 
     return (
         <>
-            <h1>{t("public_notes")}</h1>
+            <h1 style={{textAlign: "center"}}>{t("public_notes")}</h1>
             <p className='text-align-justify'>{t("introduction")}</p>
 
             {notesServiceState == "loading" && <p style={{textAlign: "center", fontWeight: "bold"}}>{t("fetching_notes")}</p>}

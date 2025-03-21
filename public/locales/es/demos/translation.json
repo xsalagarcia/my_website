@@ -18,7 +18,7 @@
         },
         {
             "title": "Lista de la compra",
-            "content": "<p>Aplicación para gestionar la lista de la compra. Todos los datos son <span class='italica'>offline</span>, es decir, que se centra en la gestión de datos de forma local en el teléfono. Permite crear categorías para asociar a ellos los productos, a los que se les puede hacer anotaciones y marcarlos para la compra, urgente o no. Todo ello para poder filtrar la lista con distintos criterios.</p><p>Fue creada con la intención de trabajar con conceptos como <span class='italica'>ViewModel</span>, <span class='italica'>LiveData</span>, <span class='italica'>Room</span> y <span class='italica'>RecyclerView</span>, que permiten mostrar grandes listas de datos de forma eficiente y almacenar de forma local con SQLite los datos, estructurados a partir del ORM que ofrece la API de android.</p>",
+            "content": "<p>Aplicación para gestionar la lista de la compra. Todos los datos son <span class='italica'>offline</span>, es decir, que se centra en la gestión de datos de forma local en el teléfono. Permite crear categorías para asociar a ellos los productos, a los que se les puede hacer anotaciones y marcarlos para la compra, urgente o no. Todo ello para poder filtrar la lista con distintos criterios.</p><p>Fue creada con la intención de trabajar con conceptos como <span class='bold'>ViewModel</span>, <span class='bold'>LiveData</span>, <span class='bold'>Room</span> y <span class='bold'>RecyclerView</span>, que permiten mostrar grandes listas de datos de forma eficiente y almacenar de forma local con <span class='bold'>SQLite</span> los datos, estructurados a partir del ORM que ofrece la API de android.</p>",
             "image_url": "/images/demos/shopping-list.png",
             "tags": ["Kotlin", "Room", "RecyclerView", "LiveData", "Android"],
             "urls": [
@@ -32,7 +32,7 @@
     "web_projects": [
         {
             "title": "Jonathan assistant",
-            "content": "<p>Aplicación web con un <span class='italica'>back-end</span> programado en <span class='bold'>Python</span>, usando el framework <span class='bold'>FastAPI</span> y la API de <span class='bold'>OpenAI</span>, especialmente la parte de <span class='bold'>Assistants</span>. El asistente creado, además de generar respuestas basadas en el input del usuario, a través de las instrucciones y el soporte del <span class='italica'>back-end</span> se llama a otras APIs externas como <span class='bold'>Open-Meteo</span> y <span class='bold'>Geocoding</span> recupera localizaciones exactas y previsiones meteorológicas para las fechas que indica el usuario.</p><p>La aplicación demuestra el potencial de los asistentes que ofrece <span class='bold'>OpenAI</span> para tratar con datos fiables y actualizados, provengan de APIs externas como de bases de datos privadas, y los presenta de forma entendible al usuario.</p>",
+            "content": "<p>Aplicación web con un <span class='italica'>back-end</span> programado en <span class='bold'>Python</span>, usando el framework <span class='bold'>FastAPI</span> y la API de <span class='bold'>OpenAI</span>, especialmente la parte de <span class='bold'>Assistants</span>. El asistente creado, además de generar respuestas basadas en el input del usuario, a través de las instrucciones y el soporte del <span class='italica'>back-end</span> llama a otras APIs externas como <span class='bold'>Open-Meteo</span> y <span class='bold'>Geocoding</span> recuperando localizaciones exactas y previsiones meteorológicas para las fechas que indica el usuario.</p><p>La aplicación demuestra el potencial de los asistentes que ofrece <span class='bold'>OpenAI</span> para tratar con datos fiables y actualizados, provengan de APIs externas como de bases de datos privadas, y los presenta de forma entendible al usuario.</p>",
             "image_url": "/images/demos/shopping-list.png",
             "tags": ["front-end", "back-end", "Python", "FastAPI", "OpenAI", "Assistants", "API REST", "Redis"],
             "urls": [
@@ -41,7 +41,7 @@
         },
         {
             "title": "Website personal",
-            "content": "<p>El <span class='italica'>website</span> que estás visitando es una aplicación creada con la biblioteca <span class='bold'>React</span>. Usa además la biblioteca <span class='bold'>i18next</span> y <span class='bold'>react-i18next</span> para la gestión de los distintos idiomas en que se ofrece el sitio y <span class='bold'>react-router</span> para una mejor organización de las secciones.</p><p>Además, existe una sección con contenido renderizado dinámicamente (apuntes públicos) a partir de la obtención de datos de una API externa, en la sección de notas, haciendo posible ofrecer dinámicamente nuevas secciones y adaptar documentación Markdown para mostrarla en formato HTML.",
+            "content": "<p>El <span class='italica'>website</span> que estás visitando es una aplicación creada con la biblioteca <span class='bold'>React</span>. Usa además la biblioteca <span class='bold'>i18next</span> y <span class='bold'>react-i18next</span> para la gestión de los distintos idiomas en que se ofrece el sitio y <span class='bold'>react-router</span> para una mejor organización de las secciones.</p><p>Además, existe un apartado con contenido renderizado dinámicamente (apuntes públicos) a partir de la obtención de datos de una API externa, en la sección de notas, haciendo posible ofrecer dinámicamente nuevas secciones y adaptar documentación Markdown para mostrarla en formato HTML.",
             "image_url": "/images/demos/shopping-list.png",
             "tags": ["JavaScript", "NodeJS", "React", "i18next", "react-i18next", "react-router", "front-end", "markdownIT"],
             "urls": [
@@ -52,7 +52,7 @@
             "title": "API Notas personales",
             "content": "<p>Un servicio que da soporte a la sección de <span class='italica'>Apuntes públicos</span> del presente <span class='italica'>website</span>. Me permite subir y mantener clasificados algunos apuntes y compartir aquellos que son originales y de utilidad. El servicio está desarrollado con <span class='bold'>Python</span>, usando el framework <span class='bold'>FastAPI</span></p>",
             "image_url": "/images/demos/shopping-list.png",
-            "tags": ["JavaScript", "NodeJS", "React", "i18next", "react-i18next", "front-end"],
+            "tags": ["Python", "FastAPI", "Redis", "SQLModel", "back-end"],
             "urls": [
                 {"text": "Repositorio GitHub", "url": "https://github.com/xsalagarcia/awale"}
             ]

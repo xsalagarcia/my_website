@@ -18,7 +18,7 @@
         },
         {
             "title": "Shopping list",
-            "content": "<p>Shopping list management application. All data is offline meaning it focuses on managing data locally on the phone. It allows you to create categories to associate products with them, which you can add notes to and mark for purchase, whether urgent or not. All this allows you to filter the list with different criteria. </p><p>It was created with the intention of working with concepts such as <span class='bold'>ViewModel</span>, <span class='bold'>LiveData</span>, <span class='boold'>Room</span>, and <span class='bold'>RecyclerView</span>, which allow you to efficiently display large lists of data and store the data locally using SQLite, structured using the ORM offered by the Android API.</p>",
+            "content": "<p>Shopping list management application. All data is offline meaning it focuses on managing data locally on the phone. It allows you to create categories to associate products with them, which you can add notes to and mark for purchase, whether urgent or not. All this allows you to filter the list with different criteria. </p><p>It was created with the intention of working with concepts such as <span class='bold'>ViewModel</span>, <span class='bold'>LiveData</span>, <span class='bold'>Room</span>, and <span class='bold'>RecyclerView</span>, which allow you to efficiently display large lists of data and store the data locally using <span class='bold'>SQLite</span>, structured using the ORM offered by the Android API.</p>",
             "image_url": "/images/demos/shopping-list.png",
             "tags": ["Kotlin", "Room", "RecyclerView", "LiveData", "Android"],
             "urls": [
@@ -53,7 +53,7 @@
             "title": "Personal notes API",
             "content": "<p>A service that supports the <span class='italica'>Public Notes</span> section of this <span class='italica'>website</span>. It allows me to upload and categorize some notes and share original and useful ones. The service is developed with <span class='bold'>Python</span>, using the <span class='bold'>FastAPI</span> framework.</p>",
             "image_url": "/images/demos/shopping-list.png",
-            "tags": ["JavaScript", "NodeJS", "React", "i18next", "react-i18next", "front-end"],
+            "tags": ["Python", "FastAPI", "Redis", "SQLModel", "back-end"],
             "urls": [
                 {"text": "GitHub repository", "url": "https://github.com/xsalagarcia/awale"}
             ]

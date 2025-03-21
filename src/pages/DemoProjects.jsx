@@ -10,7 +10,6 @@ function DemoProjects() {
     const {t} = useTranslation("demos");
     const mobileProjects = t("mobile_projects", {returnObjects: true});
     const webProjects = t("web_projects", {returnObjects: true});
-    const desktopProjects = t("desktop_projects", {returnObjects: true});
 
     return (
         <>
@@ -46,8 +45,8 @@ function DemoProjects() {
                         />
                     )
             })}
-            <h2>{t("desktop_dev")}</h2>
-            {desktopProjects.map(project => {
+            {/*<h2>{t("desktop_dev")}</h2>*/}
+            {/*desktopProjects.map(project => {
                 return (
                     <ProjectCard
                         key={project.title}
@@ -59,7 +58,7 @@ function DemoProjects() {
 
                     />
                 )
-            })}
+            })*/}
 
         </>
     )
