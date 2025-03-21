@@ -28,34 +28,34 @@
 
         }
     ],
-    "web_development": "Desarrollo web",
+    "web_development": "Desenvolupament web",
     "web_projects": [
         {
             "title": "Jonathan assistant",
             "content": "<p>Aplicació web amb un <span class='italica'>back-end</span> programat amb <span class='bold'>Python</span>, utilitzant el <span class='italica'>framework</span> <span class='bold'>FastAPI</span> i l'API d'<span class='bold'>OpenAI</span>. L'assistent creat, a més de generar respostes basades en l'input de l'usuari, a través de les instruccions i el suport del <span class='italica'>back-end</span> fa crides a altres APIs externes com <span class='bold'>Open-Meteo</span> i <span class='bold'>geocoding</span> recuperant localitzacions exactes i previsions meteorològiques per les dates que indica l'usuari.<p>L'aplicació demostra el potencial dels assistents que ofereix <span class='bold'>OpenAI</span> per tractar amb dades fiables i actualitzades, provinguin d'APIs externes com de bases de dades privades, i les presenta de manera entenedora a l'usuari.</p>",
-            "image_url": "/images/demos/shopping-list.png",
+            "image_url": "/images/demos/assistant.png",
             "tags": ["front-end", "back-end", "Python", "FastAPI", "OpenAI", "Assistants", "API REST", "Redis"],
             "urls": [
-                {"text": "Visita a en Jonathan i interactua amb ell (necessitaràs una clau)", "url": "https://Jonathan.com"},
-                {"text": "Repositori GitHub", "url": "https://github.com/xsalagarcia/MyPrivateShoppingList"}
+                {"text": "Visita a en Jonathan i interactua amb ell (necessitaràs una clau)", "url": "https://assistantdemo.xsalgar.com"},
+                {"text": "Repositori GitHub", "url": "https://github.com/xsalagarcia/Jonathan_assistant"}
             ]
         },
         {
             "title": "Website personal",
             "content": "<p>El <span class='italica'>website</span> que estas visitant és una aplicació creada amb la biblioteca <span class='bold'>React</span>. Addicionalment, s'utilitza la biblioteca <span class='bold'>i18next</span> i <span class='bold'>react-i18next</span> per a la gestió dels diferents idiomes en què s'ofereix el lloc web i <span class='bold'>react-router</span> per a una millor organització de les seccions.</p><p>A més, existeix un apartat amb contingut renderitzat dinàmicament (apunts públics) a partir de l'obtenció de dades d'una API externa, a la secció de notes, fent possible oferir dinàmicament noves seccions i adaptar documentació Markdown per mostrar-la en format HTML.",
-            "image_url": "/images/demos/shopping-list.png",
+            "image_url": "/images/demos/my-website.png",
             "tags": ["JavaScript", "NodeJS", "React", "i18next", "react-i18next", "react-router", "front-end", "markdownIT"],
             "urls": [
-                {"text": "Repositori GitHub", "url": "https://github.com/xsalagarcia/awale"}
+                {"text": "Repositori GitHub", "url": "https://github.com/xsalagarcia/my_website"}
             ]
         },
         {
             "title": "API Notes personals",
             "content": "<p>Un servei que dona suport a la secció d'<span class='italica'>Apunts públics</span> del present <span class='italica'>website</span>. Em permet pujar i mantenir classificats alguns apunts i compartir aquells que són originals i útils. El servei està desenvolupat amb <span class='bold'>Python</span>, utilitzant el <span class='italica'>framework</span> <span class='bold'>FastAPI</span></p>",
-            "image_url": "/images/demos/shopping-list.png",
+            "image_url": "/images/demos/notes-api.png",
             "tags": ["Python", "FastAPI", "Redis", "SQLModel", "back-end"],
             "urls": [
-                {"text": "Repositori GitHub", "url": "https://github.com/xsalagarcia/awale"}
+                {"text": "Repositori GitHub", "url": "https://github.com/xsalagarcia/my_notes_API"}
             ]
         }
     ]

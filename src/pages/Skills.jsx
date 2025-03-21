@@ -26,7 +26,7 @@ function Skills() {
                 imageSrc={pythonIcon}
                 title={t("python", { ns: "skills" })}
                 content={t("python_text", {ns: "skills"})} 
-                url={"https://blalba.com"} />
+                /*url={"https://blalba.com"}*/ />
 
             <SkillCard 
                 imageSrc={javascriptIcon}

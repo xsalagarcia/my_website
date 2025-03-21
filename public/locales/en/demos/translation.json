@@ -28,34 +28,34 @@
 
         }
     ],
-    "web_development": "Desarrollo web",
+    "web_development": "Web development",
     "web_projects": [
         {
             "title": "Jonathan assistant",
             "content": "<p>Web application with a back-end programmed in Python, using the <span class='bold'>FastAPI</span> framework and the <span class='bold'>OpenAI</span> API, especially the <span class='bold'>Assistants</span> part. The created assistant, in addition to generating responses based on user input, through instructions and support from the back-end, calls other external APIs such as <span class='bold'>Open-Meteo</span> and <span class='bold'>Geocoding</span> to retrieve exact locations and weather forecasts for the dates indicated by the user. </p><p>The application demonstrates the potential of the assistants offered by <span class='bold'>OpenAI</span> to deal with reliable and updated data, whether from external APIs or private databases, and presents them in an understandable way to the user.</p>",
-            "image_url": "/images/demos/shopping-list.png",
+            "image_url": "/images/demos/assistant.png",
             "tags": ["front-end", "back-end", "Python", "FastAPI", "OpenAI", "Assistants", "API REST", "Redis"],
             "urls": [
-                {"text": "Visit Jonathan and interact with him (you will need a code)", "url": "https://Jonathan.com"},
-                {"text": "GitHub repository", "url": "https://github.com/xsalagarcia/MyPrivateShoppingList"}
+                {"text": "Visit Jonathan and interact with him (you will need a code)", "url": "https://assistantdemo.xsalgar.com"},
+                {"text": "GitHub repository", "url": "https://github.com/xsalagarcia/Jonathan_assistant"}
             ]
         },
         {
             "title": "Personal website",
             "content": "<p>The website you are visiting is an application created with the <span class='bold'>React</span> library. It also uses the <span class='bold'>i18next</span> and <span class='bold'>react-i18next</span> libraries to manage the different languages ​​​​in which the site is offered, and <span class='bold'>react-router</span> for a better organization of the sections. </p><p>In addition, there is a section with dynamically rendered content (public notes) from obtaining data from an external API, in the notes section, making it possible to dynamically offer new sections and adapt Markdown documentation to display it in HTML format.",
-            "image_url": "/images/demos/shopping-list.png",
+            "image_url": "/images/demos/my-website.png",
             "tags": ["JavaScript", "NodeJS", "React", "i18next", "react-i18next", "react-router", "front-end", "markdownIT"],
             "urls": [
-                {"text": "GitHub repository", "url": "https://github.com/xsalagarcia/awale"}
+                {"text": "GitHub repository", "url": "https://github.com/xsalagarcia/my_website"}
             ]
         },
         {
             "title": "Personal notes API",
             "content": "<p>A service that supports the <span class='italica'>Public Notes</span> section of this <span class='italica'>website</span>. It allows me to upload and categorize some notes and share original and useful ones. The service is developed with <span class='bold'>Python</span>, using the <span class='bold'>FastAPI</span> framework.</p>",
-            "image_url": "/images/demos/shopping-list.png",
+            "image_url": "/images/demos/notes-api.png",
             "tags": ["Python", "FastAPI", "Redis", "SQLModel", "back-end"],
             "urls": [
-                {"text": "GitHub repository", "url": "https://github.com/xsalagarcia/awale"}
+                {"text": "GitHub repository", "url": "https://github.com/xsalagarcia/my_notes_API"}
             ]
         }
     ]
