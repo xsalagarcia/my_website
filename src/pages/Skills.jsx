@@ -10,7 +10,7 @@ import javaIcon from "../assets/images/svg-icons/java-svgrepo-com.svg";
 import gitIcon from "../assets/images/svg-icons/git-svgrepo-com.svg";
 import securityIcon from "../assets/images/svg-icons/safety-svgrepo-com.svg";
 import webdevIcon from "../assets/images/svg-icons/react-svgrepo-com.svg";
-import mobiledevIcon from "../assets/images/svg-icons/git-svgrepo-com.svg";
+import mobiledevIcon from "../assets/images/svg-icons/android-color-svgrepo-com.svg";
 import learningIcon from "../assets/images/svg-icons/idea-svgrepo-com.svg";
 
 function Skills() {
