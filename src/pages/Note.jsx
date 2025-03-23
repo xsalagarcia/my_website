@@ -1,10 +1,17 @@
+import { useTranslation } from 'react-i18next';
+
+
 import { useState, useEffect } from "react";
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import PropTypes from "prop-types";
 
 import MarkdownRenderer from "../components/MarkdownRenderer";
+import FloatingScrollTopButton from "../components/FloatingScrollTopButton";
 
 function Note() {
+    const {t} = useTranslation("notes");
+
+
     let { noteName } = useParams();
     const [showedNote, setShowedNote ] = useState(false);
 
@@ -18,13 +25,25 @@ function Note() {
         .catch(error=>{
             console.log(error)
         })
-    }, []);
+    }, [noteName]);
 
     return (
-        <article>
-            <h1>{showedNote.name}</h1>
+        <>
+        <h1 style={{textAlign: "center"}}>{t("public_notes")}</h1>
+        <div style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "1rem"}}>
+            <Link 
+                className="btn-icon-lg btn bs-icons  flex-shrink-0" 
+                data-icon="&#xF12A;" 
+                style={{borderRadius: "50%", display: "inline-block"}}
+                to="/public-notes"
+                ></Link>
+            <h2 className='margin-0 flex-shrink-1' >{showedNote.title}</h2>
+        </div>
+        <article style={{marginBottom: "4rem"}}>
             {showedNote && <MarkdownRenderer markdownContent={showedNote.content}></MarkdownRenderer>}
         </article>
+            {showedNote && <FloatingScrollTopButton/>}
+        </>
     )
 }
 

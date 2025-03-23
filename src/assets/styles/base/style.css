@@ -389,6 +389,7 @@
             line-height: rem;
         }
     }
+
     --button-bg-color: var(--color-10);
     --button-hover-bg-color:  var(--color-9);
     --button-active-bg-color: var(--color-8);
@@ -404,6 +405,16 @@
     }
     &[disabled]::before{
         color: var(--button-disabled-color);
+    }
+}
+
+a.btn-icon-lg{
+    position: relative;
+    
+    &::before{
+        position: absolute;
+        right: 1.75rem;
+        top: 0.6rem;
     }
 }
 .chip-plus-button {

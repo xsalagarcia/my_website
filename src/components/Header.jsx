@@ -24,6 +24,7 @@ function Header() {
                     height: "100vh",
                 }}
                 onClick={()=>{setUncollapsed(false);toggleCollapse()}}
+                onTouchStart={()=>{setUncollapsed(false);toggleCollapse()}}
                 className="uncollapsed-background"
             ></div>}
             <nav className="navbar wrapper">

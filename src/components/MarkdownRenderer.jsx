@@ -44,7 +44,7 @@ function MarkdownRenderer ( {markdownContent }) {
     
     return (
 
-        <article className="markdown" dangerouslySetInnerHTML={{ __html: htmlContent }} ></article>
+        <div className="markdown" dangerouslySetInnerHTML={{ __html: htmlContent }} ></div>
     )
 
 }

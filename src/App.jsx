@@ -9,8 +9,8 @@ function App() {
     <>
       <Header />
       <div id="page-content">
-      <Main />
-      <Footer />
+        <Main />
+        <Footer />
       </div>
     </>
   )
