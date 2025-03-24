@@ -8,6 +8,9 @@ i18n
     .use(initReactI18next)
     .use(Backend)
     .use(LanguageDetector)
+    .on("languageChanged", (lng) => {
+        document.documentElement.lang = lng;
+    })
     .init({
         /*debug: true,*//*Uncomment it for debugging*/
         suportedLngs: ["en", "ca", "es"],
