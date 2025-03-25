@@ -1,7 +1,7 @@
 {
     "skills": "Habilitats",
 
-    "introduction": "No sé tocar el saxofon, però sé fer servir un ordinador, i a banda de suggerir-te que reiniciïs l'ordinador, tinc altres habilitats.",
+    "introduction": "",
 
     "python": "Python",
     "python_text": "He fet servir Python per construir API REST (principalment amb FastAPI), scripts de sistema, algoritmes de criptografia, aprenentatge computacional, connectar amb bases de dades, analitzar dades... Estic familiaritzat amb les biblioteques habituals per a aquests casos.",

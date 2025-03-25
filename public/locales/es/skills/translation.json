@@ -1,7 +1,7 @@
 {
     "skills": "Habilidades",
 
-    "introduction": "No sé tocar el saxofón, pero sé usar un ordenador, y aparte de sugerirte que reinicies el ordenador, tengo otras habilidades.",
+    "introduction": "",
 
     "python": "Python",
     "python_text": "He usado Python para construir API REST (principalmente con FastAPI), scripts de sistema, algoritmos de criptografía, aprendizaje computacional, conectar con bases de datos, analizar datos... Estoy familiarizado con las bibliotecas habituales para estos casos.",

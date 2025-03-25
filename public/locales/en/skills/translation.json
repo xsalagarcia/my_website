@@ -1,7 +1,7 @@
 {
     "skills": "Skills",
 
-    "introduction": "I don't know how to play the saxophone, but I know how to use a computer, and aside from suggesting you restart your computer, I have other skills.",
+    "introduction": "",
 
     "python": "Python",
     "python_text": "I've used Python to build REST APIs (mostly with FastAPI), system scripts, cryptography algorithms, machine learning, connecting to databases, analyzing data... I'm familiar with the usual libraries for these cases.",
