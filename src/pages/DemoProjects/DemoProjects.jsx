@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import ProjectCard from '../components/ProjectCard';
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
 
 

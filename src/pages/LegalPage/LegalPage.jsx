@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import email from "../assets/images/email.svg";
+import email from "../../assets/images/email.svg";
 
 function LegalPage() {
     const {t} = useTranslation("privacy");
@@ -9,7 +9,7 @@ function LegalPage() {
             <h2>{t("legal_notice")}</h2>
             <ul>
                 <li>{t("holder")}: Xavier Sala Garcia</li>
-                <li className='row align-items-center'>{t("contact")}: <img src={email} className="margin-left-0-5" alt="xsalagarcia@gmail.com"/></li>
+                <li className='row align-items-center'>{t("contact")}: <img src={email} className="m-l-0-5" alt="xsalagarcia@gmail.com"/></li>
             </ul>
             <p style={{textAlign: "justify"}}>{t("legal_text")}</p>
             

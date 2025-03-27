@@ -1,0 +1,40 @@
+.SkillCard {
+    border-radius: 10px;
+    border-bottom: white solid 1px;
+    border-right: white solid 1px;
+    border-top: var(--gray-1) solid 1px;
+    border-left: var(--gray-1) solid 1px;
+    margin: 0.5rem;        
+    flex: 0 0 calc(100%- 0.5rem);
+
+    box-shadow: 12px 12px 12px rgba(0,0,0,0.1), -10px -10px 10px white;
+
+    background-image: linear-gradient(to bottom right, white, var(--gray-1));
+
+
+    & .title {
+        padding: 0.5rem;
+        border-bottom: solid 1px var(--gray-3);
+        & img{
+            margin-right: 0.5rem;
+        }
+    }
+    & .content {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+        text-align:justify;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .SkillCard {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .SkillCard {
+        flex: 0 0 calc(33.333% - 1rem);
+    }
+}
+

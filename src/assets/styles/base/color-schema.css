@@ -44,5 +44,7 @@ body { /*Default, no specific class needed*/
     --white-transparent-5: #FFFFFF88;
     --white-transparent-6: #FFFFFFaa;
     --almost-white: #efefef;
+    --white: white;
+    --black: black;
 }
 

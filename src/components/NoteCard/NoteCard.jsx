@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router";
+import styles from "./NoteCard.module.css";
 
 function NoteCard( {name, abstract, tags} ) {
 
     
     return (
-        <li className="note">
+        <li className={styles.NoteCard}>
             <Link to={name}  >
                 <h6>{name}</h6>
                 <p className='margin-0'>{abstract}</p>

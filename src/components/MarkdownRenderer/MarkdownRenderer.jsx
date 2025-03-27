@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import markdownIt from 'markdown-it';
 import markdownItAnchor from "markdown-it-anchor";
 import mermaid from 'mermaid';
-import "../assets/styles/components/MarkdownRenderer.css"
+import styles from "./MarkdownRenderer.module.css"
 
 function MarkdownRenderer ( {markdownContent }) {
 
@@ -44,7 +44,7 @@ function MarkdownRenderer ( {markdownContent }) {
     
     return (
 
-        <div className="markdown" dangerouslySetInnerHTML={{ __html: htmlContent }} ></div>
+        <div className={styles.MarkdownRenderer} dangerouslySetInnerHTML={{ __html: htmlContent }} ></div>
     )
 
 }

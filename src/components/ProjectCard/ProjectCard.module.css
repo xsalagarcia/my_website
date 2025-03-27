@@ -1,0 +1,47 @@
+.ProjectCard {
+    padding: 1rem;
+    background-color: white;
+    margin: 1rem 0;
+
+    & h3,
+    & .bold,
+    & .italica {
+        color: var(--color-5);
+    }
+    & .contentImage{
+        display: flex;
+        flex-flow: row wrap;
+        & .content {
+            flex: 0 0 100%;
+            margin: 0;
+            padding: 0.5rem;
+            text-align: justify;
+        &>a{
+            color: var(--color-5);
+            display: block;
+            text-decoration: underline dotted;
+        }
+        }
+        & figure {
+            flex: 0 0 100%;
+            margin: 0;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .ProjectCard .contentImage{
+        & .content{
+            flex: 0 0 50%;            
+        }
+        & figure {
+            flex: 0 0 50%;
+        }
+    }
+}

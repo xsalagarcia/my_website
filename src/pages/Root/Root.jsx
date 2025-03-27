@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import myself from "../assets/images/myself_250.webp"
+import myself from "../../assets/images/myself_250.webp"
 
 
 

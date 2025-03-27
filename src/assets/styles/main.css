@@ -4,4 +4,8 @@
 @import url("./base/bootstrap-icons.css");
 @import url("./base/base.css");
 @import url("./base/grid.css");
-@import url("./base/style.css");
+/*@import url("./base/style.css");*/
+@import url("./base/basic-blocks.css");
+@import url("./base/utilities.css");
+@import url("./base/page-structure.css")
+

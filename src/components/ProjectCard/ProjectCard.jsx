@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import styles from "./ProjectCard.module.css";
 
 /**
  * 
@@ -12,12 +13,12 @@ import PropTypes from "prop-types";
  */
 function ProjectCard({ className, title, content, imageUrl, tags, urls}) {
     return(
-        <div className={`${className} project-card`}>
-            <h3 className="title">
+        <div className={`${className} ${styles.ProjectCard}`}>
+            <h3>
                 {title}
             </h3>
-            <div className="content-image">
-                <div className="content">
+            <div className={styles.contentImage}>
+                <div className={styles.content}>
                     <div dangerouslySetInnerHTML={{ __html: content }}>
                     </div>
                     {urls.map(url=>{return(<a key={url.text} href={url.url}>{url.text}</a>)})}

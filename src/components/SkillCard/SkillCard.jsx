@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import styles from "./SkillCard.module.css";
 
 /**
  * 
@@ -10,13 +11,13 @@ import PropTypes from "prop-types";
  */
 function SkillCard({imageSrc, title, content, url = null}){
     return(
-    <a href={url} className="skill-card">
+    <a href={url} className={styles.SkillCard}>
         <div>
-            <div className="title">
+            <div className={styles.title}>
                 <img src={imageSrc} alt="icon image" width="16" height="16"/>
                 {title}
             </div>
-            <div className="content"
+            <div className={styles.content}
                 dangerouslySetInnerHTML={{ __html: content }}>
             </div>
         </div>

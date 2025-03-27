@@ -1,0 +1,12 @@
+.Category{
+    background-color: var(--color-10);
+    margin-top: 1rem;
+    padding: 0.5rem;
+    & h5 {
+        margin-bottom: 0;
+        font-weight: bold;
+        & a{
+            color: var(--color-1);
+        }
+    }   
+}

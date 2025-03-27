@@ -1,14 +1,14 @@
 import { Routes, Route } from "react-router";
-import Root from "../pages/Root"
-import DemoProjects from "../pages/DemoProjects";
-import Skills from "../pages/Skills";
-import PublicNotes from "../pages/PublicNotes";
-import LegalPage from "../pages/LegalPage";
-import Note from "../pages/Note"
+import Root from "../../pages/Root/Root"
+import DemoProjects from "../../pages/DemoProjects/DemoProjects";
+import Skills from "../../pages/Skills/Skills";
+import PublicNotes from "../../pages/PublicNotes/PublicNotes";
+import LegalPage from "../../pages/LegalPage/LegalPage";
+import Note from "../../pages/Note/Note"
 
 function Main() {
     return (
-        <main className="wrapper">
+        <main className="wrapper flex-grow-1 justify-content-center align-content-center">
             <Routes>
                 <Route path="/" element={<Root />} />
                 <Route path="/demo-projects" element={<DemoProjects />} />

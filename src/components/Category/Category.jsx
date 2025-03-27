@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
-import { useCollapse } from "../hooks/useCollapse";
-import NoteCard from "./NoteCard";
+import { useCollapse } from "../../hooks/useCollapse";
+import NoteCard from "../NoteCard/NoteCard";
+import styles from "./Category.module.css";
 
 
 function Category ({ category }) {
@@ -9,11 +10,11 @@ function Category ({ category }) {
 
 
     return (
-    <div className='category-card'>
+    <div className={styles.Category}>
         <h5 >
             <a href="" style={{display: "block"}} onClick={e=>{e.preventDefault();toggleCollapse();}}>{category.name}</a> 
         </h5>
-        <ul className="collapsable collapsed notes-list" ref={elementRef}>
+        <ul className={`collapsable collapsed`} ref={elementRef}>
         {category.notes.map(note=> {
             return <NoteCard key={note.name} name={note.name} abstract={note.abstract} tags={note.tags}/>
         })}

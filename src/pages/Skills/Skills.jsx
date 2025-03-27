@@ -1,17 +1,17 @@
 import { useTranslation } from 'react-i18next';
-import SkillCard from "../components/SkillCard";
-import kotlinIco from "../assets/images/svg-icons/kotlin-svgrepo-com.svg";
-import pythonIcon from "../assets/images/svg-icons/python-svgrepo-com.svg"
-import linuxIcon from "../assets/images/svg-icons/linux-svgrepo-com.svg";
-import databasesIcon from "../assets/images/svg-icons/database-svgrepo-com.svg";
-import htmlIcon from "../assets/images/svg-icons/html-5-svgrepo-com.svg";
-import javascriptIcon from "../assets/images/svg-icons/javascript-svgrepo-com.svg"
-import javaIcon from "../assets/images/svg-icons/java-svgrepo-com.svg";
-import gitIcon from "../assets/images/svg-icons/git-svgrepo-com.svg";
-import securityIcon from "../assets/images/svg-icons/safety-svgrepo-com.svg";
-import webdevIcon from "../assets/images/svg-icons/react-svgrepo-com.svg";
-import mobiledevIcon from "../assets/images/svg-icons/android-color-svgrepo-com.svg";
-import learningIcon from "../assets/images/svg-icons/idea-svgrepo-com.svg";
+import SkillCard from "../../components/SkillCard/SkillCard";
+import kotlinIco from "../../assets/images/svg-icons/kotlin-svgrepo-com.svg";
+import pythonIcon from "../../assets/images/svg-icons/python-svgrepo-com.svg"
+import linuxIcon from "../../assets/images/svg-icons/linux-svgrepo-com.svg";
+import databasesIcon from "../../assets/images/svg-icons/database-svgrepo-com.svg";
+import htmlIcon from "../../assets/images/svg-icons/html-5-svgrepo-com.svg";
+import javascriptIcon from "../../assets/images/svg-icons/javascript-svgrepo-com.svg"
+import javaIcon from "../../assets/images/svg-icons/java-svgrepo-com.svg";
+import gitIcon from "../../assets/images/svg-icons/git-svgrepo-com.svg";
+import securityIcon from "../../assets/images/svg-icons/safety-svgrepo-com.svg";
+import webdevIcon from "../../assets/images/svg-icons/react-svgrepo-com.svg";
+import mobiledevIcon from "../../assets/images/svg-icons/android-color-svgrepo-com.svg";
+import learningIcon from "../../assets/images/svg-icons/idea-svgrepo-com.svg";
 
 function Skills() {
     const {t} = useTranslation("skills");

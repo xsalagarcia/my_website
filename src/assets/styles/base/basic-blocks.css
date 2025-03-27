@@ -1,0 +1,189 @@
+
+.btn/*,
+[class*=" btn-"],
+[class^="btn-"]*/
+ {
+    padding: 0.5rem 0.5rem;
+    border: none;
+
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--button-bg-color);
+    font-family: var(--body-font) ;
+    font-size: 0.9rem;
+    color: var(--button-color);
+    
+    display: inline-block;
+    height: calc(1rem * 2);
+    line-height: calc(1rem * 1);
+
+    &:hover,
+    &:focus
+    {
+        background-color: var(--button-hover-bg-color);
+        box-shadow: var(--button-hover-shadow);
+    }
+
+    &:active{
+        background-color: var(--button-active-bg-color);
+        box-shadow: none;
+    }
+    &.active{
+        background-color: var(--button-active-class-bg-color);
+    }
+
+    & button[disabled]{
+        color: var(--button-disabled-color);
+        background-color: var(--button-disabled-bg-color);
+    
+        &:hover,
+        &:focus{
+            background-color: var(--button-disabled-bg-color);
+            box-shadow: none;
+        }
+        &.active{
+            background-color: var(--button-active-class-bg-color);
+            color: var(--button-color);
+        }
+    }
+
+    &.invert-colors{
+        background-color: var(--gray-1);
+        color: var(--color-1);
+        &:hover,
+        &:focus
+        {
+            background-color: white;
+            box-shadow: 0px 0px 3px white;
+        }
+        &:active{
+            background-color: white;
+            box-shadow: none;
+        }
+        &.active{
+            background-color: white;
+        }
+    }
+    &.soft-colors{
+        --button-bg-color: var(--color-10);
+        --button-hover-bg-color:  var(--color-9);
+        --button-active-bg-color: var(--color-8);
+        --button-active-class-bg-color: var(--color-8);
+        --button-color: var(--color-2);
+        --button-disabled-color:var(--gray-2);
+        --button-disabled-bg-color: var(--color-10);
+        --button-hover-shadow: 0px 0px 2px var(--color-2);
+    }
+    &.transparent {
+        background-color: transparent;
+        color: white;
+        font-weight: bold;
+    }
+
+    &.btn-sm {
+        font-size: 0.7rem;
+        line-height: calc(1rem * 0.7);
+
+        height: calc(1rem * 1.5);
+        line-height: calc(1rem * 0.75);
+    }   
+    &.btn-lg {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        height: calc(1rem * 3);
+        line-height: 1.5rem;
+        &.btn-only-icon{
+            position: static;
+            width: calc(1rem * 3);
+            padding: 0;
+            &::before{
+                position: relative;
+                top: 12.5%;
+                left: 25%;
+            }    
+        }
+    }
+    &.btn-mb{
+        padding: 0.5rem 1rem;
+
+        height: calc(1rem * 2.5);
+        line-height: calc(1rem * 1);
+    }
+}
+
+.btn-group{
+    display: flex;
+    & .btn, & .btn-mb, & .btn-lg, & .btn-sm, & .btn-icon, & .btn-icon-mb, & .btn-icon-lg, & .btn-icon-sm {
+        border-radius: 0px;
+        &:first-child{
+            border-radius: 5px 0px 0px 5px
+        }
+        &:last-child{
+            border-radius: 0px 5px 5px 0px;
+            border-right: none;
+        }
+    }
+}
+
+
+a.link {
+    color: var(--color-1);
+    text-decoration: underline;
+
+    &:visited {
+        color: var(--color-2);
+        text-decoration-color: var(--color-1);
+    }
+    &.invert-colors{
+        color: var(--gray-1);
+    
+        &:visited {
+            color: var(--gray-2);
+            text-decoration-color: var(--gray-1);
+        }
+    }
+}
+
+
+ul.ul-marked,
+ul.ul-bs-marked {
+    margin: 1rem 0;
+    padding-left: 2.5rem;
+
+    & li {
+        --padding-left: 0.7rem;
+        padding-left: var(--padding-left);
+        display: list-item;
+        position: static;
+
+        & ul {
+            margin: 0;
+            padding-left: var(--padding-left);
+        }
+    }
+
+    & li::marker {
+        content: attr(data-marked);
+        white-space: pre;
+        color: var(--color-6);
+        position: static;
+        display: inline;
+    }
+}
+ul.ul-bs-marked li::marker {
+    font-family: "bootstrap-icons";
+}
+
+ul.tags-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    & li{
+        background-color: var(--color-1);
+        color: white;
+        margin: 0.2rem 0.2rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 15px;
+    }
+}

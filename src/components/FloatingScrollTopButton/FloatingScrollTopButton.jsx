@@ -45,7 +45,8 @@ function FloatingScrollTopButton () {
         }
     }, [timerId]);
 
-    function handleScrollToTop () {
+    function handleScrollToTop (e) {
+        e.preventDefault();
         const pageContent = document.getElementById("page-content");
         if (pageContent) {
             pageContent.scrollTo({
@@ -63,8 +64,8 @@ function FloatingScrollTopButton () {
     
 
     return (
-        <button
-            className="btn-icon-lg bs-icons "
+        <a
+            className="btn btn-lg bs-icons-lg btn-only-icon soft-colors rounded-full"
             data-icon="&#xF13A;"
             onClick={handleScrollToTop}
             style = {{
@@ -74,10 +75,9 @@ function FloatingScrollTopButton () {
                 display: isVisible ? 'block' : 'none',
                 transition: 'opacity 0.3s ease',
                 opacity: isVisible ? 1 : 0,
-                borderRadius: "50%",
                 boxShadow: "3px 3px 8px #7F7F7F"
             }}
-        ></button>
+        ></a>
     )
 }
 
