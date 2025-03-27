@@ -8,7 +8,7 @@ import Note from "../../pages/Note/Note"
 
 function Main() {
     return (
-        <main className="wrapper flex-grow-1 justify-content-center align-content-center">
+        <main className="wrapper flex-grow-1 justify-content-center align-content-center m-t-1 m-b-1">
             <Routes>
                 <Route path="/" element={<Root />} />
                 <Route path="/demo-projects" element={<DemoProjects />} />

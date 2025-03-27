@@ -111,6 +111,14 @@
 .text-align-right{text-align: right;}
 .text-align-justify{text-align:justify;}
 
+.bold {font-weight: bold !important;}
+.italica {font-style: italic !important;}
+.underline {text-decoration: underline !important;}
+.font-size-sm {font-size: 0.8rem !important;}
+.font-size-l {font-size: 1.2rem !important;}
+.font-size-xl {font-size: 1.5rem !important;}
+.text-decoration-none {text-decoration: none !important;}
+
 .befafter-color-1::before, .befafter-color-1::after {color: var(--color-1)}
 .befafter-color-2::before, .befafter-color-2::after {color: var(--color-2)}
 .befafter-color-3::before, .befafter-color-3::after {color: var(--color-3)}
@@ -195,4 +203,22 @@
     100% {
         height: 0px;
     }
+}
+
+
+/* scale-on-focus-n class*/
+.scale-on-focus-1050:hover {transform: scale(1.050, 1.050);}
+.scale-on-focus-1075:hover {transform: scale(1.075, 1.075);}
+.scale-on-focus-1100:hover {transform: scale(1.1, 1.1);}
+.scale-on-focus-1125:hover {transform: scale(1.125, 1.125);}
+.scale-on-focus-1150:hover {transform: scale(1.15, 1.15);}
+[class*=" scale-on-focus-"], [class^="scale-on-focus-"] { 
+    transform: scale(1, 1);
+    transition-property: transform;
+    transition-duration: 200ms;
+    transition-delay: 40ms;
+    transform-origin: center;
+}
+[class*=" scale-on-focus-"]:hover, [class^="scale-on-focus-"]:hover { 
+    z-index: 1;
 }
