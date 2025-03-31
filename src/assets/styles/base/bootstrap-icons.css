@@ -29,7 +29,7 @@ https://icons.getbootstrap.com/
 }
 
 .bs-icons::before, .bs-icons-lg::before, .bs-icons-sm::before{content: attr(data-icon);}
-.bs-icons-lg::before{font-size: 1.5rem; line-height: 1.5;}
+.bs-icons-lg::before{font-size: 1.2rem;}
 .bs-icons-sm::before{font-size: 0.7rem;}
 
 .bs-icons-after::after{

@@ -63,7 +63,7 @@ function FloatingScrollTopButton () {
     
 
     return (
-        <a
+        <button
             className="btn btn-lg bs-icons-lg btn-only-icon soft-colors rounded-full"
             data-icon="&#xF13A;"
             onClick={handleScrollToTop}
@@ -76,7 +76,7 @@ function FloatingScrollTopButton () {
                 opacity: isVisible ? 1 : 0,
                 boxShadow: "3px 3px 8px #7F7F7F"
             }}
-        ></a>
+        ></button>
     )
 }
 

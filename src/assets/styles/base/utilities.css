@@ -111,13 +111,13 @@
 .text-align-right{text-align: right;}
 .text-align-justify{text-align:justify;}
 
-.bold {font-weight: bold !important;}
-.italica {font-style: italic !important;}
-.underline {text-decoration: underline !important;}
-.font-size-sm {font-size: 0.8rem !important;}
-.font-size-l {font-size: 1.2rem !important;}
-.font-size-xl {font-size: 1.5rem !important;}
-.text-decoration-none {text-decoration: none !important;}
+.bold {font-weight: bold;}
+.italica {font-style: italic;}
+.underline {text-decoration: underline;}
+.font-size-sm {font-size: 0.8rem;}
+.font-size-l {font-size: 1.2rem;}
+.font-size-xl {font-size: 1.5rem;}
+.text-decoration-none {text-decoration: none;}
 
 .befafter-color-1::before, .befafter-color-1::after {color: var(--color-1)}
 .befafter-color-2::before, .befafter-color-2::after {color: var(--color-2)}

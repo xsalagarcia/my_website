@@ -79,6 +79,11 @@
         color: white;
         font-weight: bold;
     }
+    &.btn-only-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
 
     &.btn-sm {
         font-size: 0.7rem;
@@ -93,14 +98,7 @@
         height: calc(1rem * 3);
         line-height: 1.5rem;
         &.btn-only-icon{
-            position: static;
             width: calc(1rem * 3);
-            padding: 0;
-            &::before{
-                position: relative;
-                top: 12.5%;
-                left: 25%;
-            }    
         }
     }
     &.btn-mb{
