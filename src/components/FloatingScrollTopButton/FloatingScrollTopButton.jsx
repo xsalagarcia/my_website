@@ -16,7 +16,6 @@ function FloatingScrollTopButton () {
 
                 if (timerId){
                     clearTimeout(timerId);
-                    console.log("timer id clena", timerId)
                 }
 
                 setTimerId(setTimeout(()=> {
