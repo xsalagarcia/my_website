@@ -14,7 +14,7 @@ i18n
     .init({
         /*debug: true,*//*Uncomment it for debugging*/
         suportedLngs: ["en", "ca", "es"],
-        fallbackLng: "es",
+        fallbackLng: import.meta.env.FALLBACK_LANG,
         backend: {
             loadPath: "/locales/{{lng}}/{{ns}}/translation.json"
         },
