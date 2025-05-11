@@ -38,6 +38,9 @@
     a[href^="#"]{
         color: var(--color-5);
     }
+    a[href^="http"] {
+        text-decoration: underline dotted;
+    }
     & ol {
         list-style-type: decimal !important;
         list-style: inside;
@@ -118,4 +121,5 @@
             line-height: 1.35rem;
         }
     }
+
 }
