@@ -12,8 +12,10 @@ function Main() {
             <Routes>
                 <Route path="/" element={<Root />} />
                 <Route path="/demo-projects" element={<DemoProjects />} />
-                <Route path="/public-notes" element={<PublicNotes />} />
-                <Route path="/public-notes/:noteName" element={<Note />} />
+                <Route path="/public-notes">
+                    <Route index  element={<PublicNotes />} />
+                    <Route path=":noteName" element={<Note />} />
+                </Route>
                 <Route path="/skills" element={<Skills />} />
                 <Route path="/legal" element={<LegalPage />} />
             </Routes>
