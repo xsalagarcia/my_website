@@ -58,7 +58,20 @@
                 {"text": "GitHub repository", "url": "https://github.com/xsalagarcia/my_notes_API"}
             ]
         }
+    ],
+    "desktop_and_cli": "CLI and Desktop",
+    "desktop_cli_projects": [
+        {
+            "title": "Agentxs",
+            "content": "<p>A wrapper package that experiments with the <span class='bold'>OpenAI Agents</span> Development Kit. Two agents are presented as examples: one for analyzing Python projects and another for analyzing PostgreSQL databases. The code is structured to facilitate the addition of available tools for the agent and the creation of additional agents through the use of inheritance, promoting a layered and modular design.</p> <p>A command-line interface is provided through the <span class='bold'>Typer</span> library, as well as a more advanced interface, halfway between the command line and a graphical interface, through the <span class='bold'>Textual</span> library.</p><p>The OpenAI Agents library/SDK allows for easy building of agents using both OpenAI LLM and others beyond OpenAI, adding tools based on Python functions or MCP servers, among other features.</p>",
+            "image_url": "/images/demos/agentxs.png",
+            "tags": ["Textual", "Rich", "Python", "OpenAI", "Agents"],
+            "urls": [
+                {"text": "Repositorio GitHub", "url": "https://github.com/xsalagarcia/agentxs"}
+            ]
+        }
     ]
+    
 
 
 }
